@@ -1,0 +1,14 @@
+.nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @include vp-1199 {
+    padding: 50px 45px 70px;
+    flex-direction: column;
+    gap: 26px;
+  }
+}
