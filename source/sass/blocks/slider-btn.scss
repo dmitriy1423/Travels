@@ -1,0 +1,15 @@
+.slider-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 35px;
+  background-color: $color-button-default;
+  cursor: pointer;
+
+  .slider-btn__icon {
+    width: 14px;
+    height: 9px;
+    fill: $color-icon-light;
+  }
+}
