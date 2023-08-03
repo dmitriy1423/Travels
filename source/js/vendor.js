@@ -26,11 +26,34 @@ function initSliders() {
       1200: {
         slidesPerView: 3,
         spaceBetween: 30,
-      }
+      },
     },
     navigation: {
       nextEl: '.next-tours__slider-next',
       prevEl: '.next-tours__slider-prev',
+    },
+  });
+
+  const trainingSlider = new Swiper('.training__slider', {
+    direction: 'horizontal',
+    slidesPerView: 4,
+    spaceBetween: 30,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+    navigation: {
+      nextEl: '.training__slider-next',
+      prevEl: '.training__slider-prev',
     },
   });
 }

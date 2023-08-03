@@ -1,0 +1,146 @@
+.training {
+  background-color: $color-background-default;
+
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 56px;
+    padding-right: 300px;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include vp-1199 {
+      padding-right: 100px;
+      margin-bottom: 66px;
+    }
+
+    @include vp-767 {
+      padding-right: 0;
+      margin-bottom: 49px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 41px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 21px;
+
+    @include vp-1199 {
+      margin-bottom: 32px;
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+.training__title {
+  position: relative;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 35px;
+
+    @include vp-1199 {
+      margin-bottom: 21px;
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+    @include vp-767 {
+      width: 160px;
+      margin-bottom: 16px;
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, -25%);
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    opacity: 0.03;
+
+    @include vp-1199 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @include vp-767 {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+}
+
+.training__slider {
+  display: grid;
+  margin-bottom: 52px;
+
+  @include vp-1199 {
+    margin-bottom: 41px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 38px;
+  }
+}
+
+.training__slider-buttons-wrapper {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  display: flex;
+  gap: 5px;
+  width: fit-content;
+
+  @include vp-1199 {
+    top: -59px;
+  }
+}
+
+.training__slider-next {
+  transform: rotate(180deg);
+}
+
+.training__list {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  border-bottom: 1px solid rgba(2, 101, 193, 0.2);
+
+  @media (max-width: 1199px) {
+    border: none;
+  }
+}
+
+.training__process {
+  margin-bottom: 80px;
+
+  @include vp-767 {
+    margin-bottom: 16px;
+  }
+}
