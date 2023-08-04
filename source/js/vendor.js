@@ -56,6 +56,29 @@ function initSliders() {
       prevEl: '.training__slider-prev',
     },
   });
+
+  const reviewsSlider = new Swiper('.reviews__slider', {
+    direction: 'horizontal',
+    slidesPerView: 1.4,
+    spaceBetween: 30,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1.28,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 1.65,
+        spaceBetween: 30,
+      },
+    },
+    navigation: {
+      nextEl: '.reviews__slider-next',
+      prevEl: '.reviews__slider-prev',
+    },
+  });
 }
 
 export default initSliders;
