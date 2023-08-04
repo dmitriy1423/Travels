@@ -1,4 +1,5 @@
 import './vendor/swiper';
+import swiper from './vendor/swiper';
 
 function initSliders() {
   const heroSlider = new Swiper('.hero__slider', {
@@ -79,6 +80,40 @@ function initSliders() {
       prevEl: '.reviews__slider-prev',
     },
   });
+
+  const desktopWidth = window.matchMedia('(min-width: 1200px)');
+  const advantagesSlider = document.querySelector('.advantages__slider');
+  let advantagesSwiper;
+
+  function desktopAdvantagesSlider() {
+    if (desktopWidth.matches && advantagesSlider.dataset.desktop === 'false') {
+      advantagesSwiper = new Swiper('.advantages__slider', {
+        direction: 'horizontal',
+        slidesPerView: 3.6,
+        spaceBetween: 30,
+        loop: true,
+        initialSlide: 2,
+        centeredSlides: true,
+        navigation: {
+          nextEl: '.advantages__slider-next',
+          prevEl: '.advantages__slider-prev',
+        },
+      });
+
+      advantagesSlider.dataset.desktop = 'true';
+    }
+
+    if (!desktopWidth.matches) {
+      advantagesSlider.dataset.desktop = 'false';
+
+      if (advantagesSlider.classList.contains('swiper-initialized')) {
+        advantagesSwiper.destroy();
+      }
+    }
+  }
+
+  desktopAdvantagesSlider();
+  window.addEventListener('resize', desktopAdvantagesSlider);
 }
 
 export default initSliders;

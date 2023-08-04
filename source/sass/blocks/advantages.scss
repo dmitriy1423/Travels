@@ -1,0 +1,132 @@
+.advantages {
+  background-color: $color-background-default;
+
+  .container {
+    padding: 0;
+    position: relative;
+    overflow: clip visible;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -241px;
+      left: -466px;
+      width: 1170px;
+      height: 391px;
+      background-image: url("../img/advantages-clouds-1.png");
+
+      @include vp-1199 {
+        content: none;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -58px;
+      right: -185px;
+      width: 788px;
+      height: 263px;
+      background-image: url("../img/advantages-clouds-2.png");
+
+      @include vp-1199 {
+        content: none;
+      }
+    }
+
+    @include vp-1199 {
+      padding: 0 45px 70px;
+    }
+
+    @include vp-767 {
+      padding: 0 15px 60px;
+    }
+  }
+}
+
+.advantages__title {
+  position: relative;
+  text-align: center;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 47px;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 35px;
+
+    @include vp-1199 {
+      margin-bottom: 47px;
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 28px;
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    opacity: 0.03;
+
+    @include vp-1199 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @include vp-767 {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+}
+
+.advantages__slider {
+  display: grid;
+  padding-bottom: 84px;
+
+  @include vp-1199 {
+    padding-bottom: 0;
+  }
+}
+
+.advantages__slider-wrapper {
+  @include vp-1199 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+.advantages__slider-buttons-wrapper {
+  position: absolute;
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.advantages__slider-next {
+  transform: rotate(180deg);
+}
