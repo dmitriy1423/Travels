@@ -1,5 +1,4 @@
 import './vendor/swiper';
-import swiper from './vendor/swiper';
 
 function initSliders() {
   const heroSlider = new Swiper('.hero__slider', {
@@ -114,6 +113,22 @@ function initSliders() {
 
   desktopAdvantagesSlider();
   window.addEventListener('resize', desktopAdvantagesSlider);
+
+  const gallerySlider = new Swiper('.gallery__slider', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    spaceBetween: 5,
+    breakpoints: {
+      1200: {
+        slidesPerView: 'auto',
+        spaceBetween: 5,
+      },
+    },
+    navigation: {
+      nextEl: '.gallery__slider-next',
+      prevEl: '.gallery__slider-prev',
+    },
+  });
 }
 
 export default initSliders;

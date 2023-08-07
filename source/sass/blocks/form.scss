@@ -1,0 +1,158 @@
+.form {
+  background-color: #6d7c55;
+  background-image: url("../img/form-background-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $color-default-white;
+  text-align: center;
+
+  .container {
+    padding: 308px 231px;
+
+    @include vp-1199 {
+      padding: 196px 236px 183px;
+    }
+
+    @include vp-767 {
+      padding: 181px 15px 175px;
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 35px;
+    padding-right: 17px;
+
+    @include vp-1199 {
+      padding-right: 0;
+      margin-bottom: 18px;
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 12px;
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 42px;
+    padding-right: 18px;
+
+    @include vp-1199 {
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 25px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  @include vp-1199 {
+    background-image: url("../img/form-background-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../img/form-background-mobile.jpg");
+  }
+}
+
+.form__wrapper form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.7fr;
+  gap: 30px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding: 0 15px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.form__field input {
+  position: relative;
+  width: 100%;
+  padding: 21px 30px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: $color-background-default;
+  outline: none;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+
+  &::placeholder,
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder {
+    color: rgba(45, 56, 63, 0.5);
+    position: absolute;
+    left: 30px;
+
+    @include vp-1199 {
+      left: 15px;
+    }
+  }
+
+  &:not(:disabled):hover {
+    &::placeholder {
+      color: #0266c1;
+    }
+    border: 1px solid #0266c1;
+  }
+
+  &:not(:disabled):focus,
+  &:not(:disabled):active {
+    &::placeholder {
+      opacity: 0;
+    }
+    border: 1px solid #1c3374;
+  }
+
+  &:disabled {
+    border: 1px solid rgba(2, 102, 193, 0.1);
+  }
+
+  @include vp-1199 {
+    padding: 15px 10px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @include vp-767 {
+    padding: 15px;
+  }
+}
+
+.form__field {
+  &.is-invalid {
+    input,
+    input:hover,
+    input:focus {
+      border: 1px solid #ff121f;
+    }
+  }
+
+  &:last-of-type {
+    @include vp-1199 {
+      margin-bottom: 6px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 1px;
+    }
+  }
+}
+

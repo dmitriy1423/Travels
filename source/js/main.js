@@ -6,6 +6,7 @@ import {Burger} from './modules/mobile-menu/burger';
 import {initLocomotiveScroll} from './modules/mobile-menu/init-locomotive-scroll';
 import initVideo from './modules/video/video';
 import initAudio from './modules/audio/audio';
+import initLeaflet from './modules/map/map';
 
 // ---------------------------------
 
@@ -30,9 +31,17 @@ window.addEventListener('DOMContentLoaded', () => {
     burger.init();
   });
 
+  const formWrapper = document.querySelector('.form__wrapper');
+  if (formWrapper) {
+    formWrapper.addEventListener('submit', () => {
+      window.form.validateForm(formWrapper);
+    });
+  }
+
   initVideo();
   initSliders();
   initAudio();
+  initLeaflet();
 });
 
 // ---------------------------------
