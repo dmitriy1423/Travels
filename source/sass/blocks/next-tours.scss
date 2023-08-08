@@ -30,7 +30,7 @@
     bottom: 0;
     width: 837px;
     height: 279px;
-    background-image: url("../../img/next-tours-clouds-1-desktop.png");
+    background-image: url("../img/next-tours-clouds-1-desktop.png");
     background-repeat: no-repeat;
     background-position: center;
 
@@ -47,7 +47,7 @@
     top: -20px;
     width: 602px;
     height: 1364px;
-    background-image: url("../../img/next-tours-clouds-2-desktop.png");
+    background-image: url("../img/next-tours-clouds-2-desktop.png");
     background-repeat: no-repeat;
     background-position: center;
 
@@ -59,7 +59,7 @@
     @include vp-767 {
       width: 346px;
       height: 595px;
-      background-image: url("../../img/next-tours-clouds-2-mobile.png");
+      background-image: url("../img/next-tours-clouds-2-mobile.png");
       right: -53%;
       top: 137px;
     }
