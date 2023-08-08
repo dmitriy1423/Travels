@@ -19,7 +19,7 @@
   <body>
     <div class="wrapper">
       <header class="header" data-header>
-        <div class="container">
+        <div class="container header__container">
           <h1 class="visually-hidden">
             Lifetour - организация походов в горы
           </h1>
@@ -124,8 +124,10 @@
                 </div>
                 <div class="hero__photos">
                   <picture>
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/kamchatka-photos-tablet@1x.webp 1x, img/kamchatka-photos-tablet@2x.webp 2x" width="442" height="365">
+                    <source type="image/webp" srcset="img/kamchatka-photos-desktop@1x.webp 1x, img/kamchatka-photos-desktop@2x.webp 2x" width="410" height="459">
                     <source media="(max-width: 1199px)" srcset="img/kamchatka-photos-tablet@1x.png" width="442" height="365">
-                    <img src="img/kamchatka-photos-desktop@1x.png" width="410" height="459" alt="Фотографии Камчатки.">
+                    <img src="img/kamchatka-photos-desktop@1x.png" srcset="img/kamchatka-photos-desktop@1x.png 1x, img/kamchatka-photos-desktop@2x.png 2x" width="410" height="459" alt="Фотографии Камчатки.">
                   </picture>
                 </div>
               </div>
@@ -227,7 +229,14 @@
             <div class="next-tours__slider swiper">
               <div class="next-tours__slider-wrapper swiper-wrapper">
                 <div class="next-tours__slide next-tour swiper-slide">
-                  <img src="img/next-tour-elbrus-desktop@1x.jpg" width="380" height="412" alt="Эльбрус.">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/next-tour-elbrus-mobile@1x.webp 1x, img/next-tour-elbrus-mobile@2x.webp 2x" width="290" height="412">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/next-tour-elbrus-tablet@1x.webp 1x, img/next-tour-elbrus-tablet@2x.webp 2x" width="324" height="412">
+                    <source type="image/webp" srcset="img/next-tour-elbrus-desktop@1x.webp 1x, img/next-tour-elbrus-desktop@2x.webp 2x" width="380" height="412">
+                    <source media="(max-width: 767px)" srcset="img/next-tour-elbrus-mobile@1x.jpg 1x, img/next-tour-elbrus-mobile@2x.jpg 2x" width="290" height="412">
+                    <source media="(max-width: 1199px)" srcset="img/next-tour-elbrus-tablet@1x.jpg 1x, img/next-tour-elbrus-tablet@2x.jpg 2x" width="324" height="412">
+                    <img src="img/next-tour-elbrus-desktop@1x.jpg" srcset="img/next-tour-elbrus-desktop@1x.jpg 1x, img/next-tour-elbrus-desktop@2x.jpg 2x" width="380" height="412" alt="Эльбрус.">
+                  </picture>
                   <div class="container">
                     <div class="next-tour__place">
                       Кавказ
@@ -265,7 +274,14 @@
                   </div>
                 </div>
                 <div class="next-tours__slide next-tour swiper-slide">
-                  <img src="img/next-tour-belukha-desktop@1x.jpg" width="380" height="412" alt="Белуха.">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/next-tour-belukha-mobile@1x.webp 1x, img/next-tour-belukha-mobile@2x.webp 2x" width="290" height="412">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/next-tour-belukha-tablet@1x.webp 1x, img/next-tour-belukha-tablet@2x.webp 2x" width="324" height="412">
+                    <source type="image/webp" srcset="img/next-tour-belukha-desktop@1x.webp 1x, img/next-tour-belukha-desktop@2x.webp 2x" width="380" height="412">
+                    <source media="(max-width: 767px)" srcset="img/next-tour-belukha-mobile@1x.jpg 1x, img/next-tour-belukha-mobile@2x.jpg 2x" width="290" height="412">
+                    <source media="(max-width: 1199px)" srcset="img/next-tour-belukha-tablet@1x.jpg 1x, img/next-tour-belukha-tablet@2x.jpg 2x" width="324" height="412">
+                    <img src="img/next-tour-belukha-desktop@1x.jpg" srcset="img/next-tour-belukha-desktop@1x.jpg 1x, img/next-tour-belukha-desktop@2x.jpg 2x" width="380" height="412" alt="Белуха.">
+                  </picture>
                   <div class="container">
                     <div class="next-tour__place">
                       Алтай
@@ -303,7 +319,14 @@
                   </div>
                 </div>
                 <div class="next-tours__slide next-tour swiper-slide">
-                  <img src="img/next-tour-fisht-desktop@1x.jpg" width="380" height="412" alt="Фишт.">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/next-tour-fisht-mobile@1x.webp 1x, img/next-tour-fisht-mobile@2x.webp 2x" width="290" height="412">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/next-tour-fisht-tablet@1x.webp 1x, img/next-tour-fisht-tablet@2x.webp 2x" width="324" height="412">
+                    <source type="image/webp" srcset="img/next-tour-fisht-desktop@1x.webp 1x, img/next-tour-fisht-desktop@2x.webp 2x" width="380" height="412">
+                    <source media="(max-width: 767px)" srcset="img/next-tour-fisht-mobile@1x.jpg 1x, img/next-tour-fisht-mobile@2x.jpg 2x" width="290" height="412">
+                    <source media="(max-width: 1199px)" srcset="img/next-tour-fisht-tablet@1x.jpg 1x, img/next-tour-fisht-tablet@2x.jpg 2x" width="324" height="412">
+                    <img src="img/next-tour-fisht-desktop@1x.jpg" srcset="img/next-tour-fisht-desktop@1x.jpg 1x, img/next-tour-fisht-desktop@2x.jpg 2x" width="380" height="412" alt="Фишт.">
+                  </picture>
                   <div class="container">
                     <div class="next-tour__place">
                       Адыгея
@@ -341,7 +364,14 @@
                   </div>
                 </div>
                 <div class="next-tours__slide next-tour swiper-slide">
-                  <img src="img/next-tour-elbrus-desktop@1x.jpg" width="380" height="412" alt="Эльбрус.">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/next-tour-elbrus-mobile@1x.webp 1x, img/next-tour-elbrus-mobile@2x.webp 2x" width="290" height="412">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/next-tour-elbrus-tablet@1x.webp 1x, img/next-tour-elbrus-tablet@2x.webp 2x" width="324" height="412">
+                    <source type="image/webp" srcset="img/next-tour-elbrus-desktop@1x.webp 1x, img/next-tour-elbrus-desktop@2x.webp 2x" width="380" height="412">
+                    <source media="(max-width: 767px)" srcset="img/next-tour-elbrus-mobile@1x.jpg 1x, img/next-tour-elbrus-mobile@2x.jpg 2x" width="290" height="412">
+                    <source media="(max-width: 1199px)" srcset="img/next-tour-elbrus-tablet@1x.jpg 1x, img/next-tour-elbrus-tablet@2x.jpg 2x" width="324" height="412">
+                    <img src="img/next-tour-elbrus-desktop@1x.jpg" srcset="img/next-tour-elbrus-desktop@1x.jpg 1x, img/next-tour-elbrus-desktop@2x.jpg 2x" width="380" height="412" alt="Эльбрус.">
+                  </picture>
                   <div class="container">
                     <div class="next-tour__place">
                       Кавказ
@@ -417,6 +447,9 @@
               <div class="training__slider-wrapper swiper-wrapper">
                 <div class="training__slide instructor swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-1-mobile@1x.webp 1x, img/trainer-1-mobile@2x.webp 2x" width="250" height="212">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-1-tablet@1x.webp 1x, img/trainer-1-tablet@2x.webp 2x" width="176" height="212">
+                    <source type="image/webp" srcset="img/trainer-1-desktop@1x.webp 1x, img/trainer-1-desktop@2x.webp 2x" width="238" height="212">
                     <source media="(max-width: 767px)" srcset="img/trainer-1-mobile@1x.jpg 1x, img/trainer-1-mobile@2x.jpg 2x" width="250" height="212">
                     <source media="(max-width: 1199px)" srcset="img/trainer-1-tablet@1x.jpg 1x, img/trainer-1-tablet@2x.jpg 2x" width="176" height="212">
                     <img src="img/trainer-1-desktop@1x.jpg" srcset="img/trainer-1-desktop@1x.jpg 1x, img/trainer-1-desktop@2x.jpg 2x" width="238" height="212" alt="Александр Прокофьев.">
@@ -435,6 +468,9 @@
                 </div>
                 <div class="training__slide instructor swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-2-mobile@1x.webp 1x, img/trainer-2-mobile@2x.webp 2x" width="250" height="212">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-2-tablet@1x.webp 1x, img/trainer-2-tablet@2x.webp 2x" width="176" height="212">
+                    <source type="image/webp" srcset="img/trainer-2-desktop@1x.webp 1x, img/trainer-2-desktop@2x.webp 2x" width="238" height="212">
                     <source media="(max-width: 767px)" srcset="img/trainer-2-mobile@1x.jpg 1x, img/trainer-2-mobile@2x.jpg 2x" width="250" height="212">
                     <source media="(max-width: 1199px)" srcset="img/trainer-2-tablet@1x.jpg 1x, img/trainer-2-tablet@2x.jpg 2x" width="176" height="212">
                     <img src="img/trainer-2-desktop@1x.jpg" srcset="img/trainer-2-desktop@1x.jpg 1x, img/trainer-2-desktop@2x.jpg 2x" width="238" height="212" alt="Светлана Афиногенова.">
@@ -453,6 +489,9 @@
                 </div>
                 <div class="training__slide instructor swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-3-mobile@1x.webp 1x, img/trainer-3-mobile@2x.webp 2x" width="250" height="212">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-3-tablet@1x.webp 1x, img/trainer-3-tablet@2x.webp 2x" width="176" height="212">
+                    <source type="image/webp" srcset="img/trainer-3-desktop@1x.webp 1x, img/trainer-3-desktop@2x.webp 2x" width="238" height="212">
                     <source media="(max-width: 767px)" srcset="img/trainer-3-mobile@1x.jpg 1x, img/trainer-3-mobile@2x.jpg 2x" width="250" height="212">
                     <source media="(max-width: 1199px)" srcset="img/trainer-3-tablet@1x.jpg 1x, img/trainer-3-tablet@2x.jpg 2x" width="176" height="212">
                     <img src="img/trainer-3-desktop@1x.jpg" srcset="img/trainer-3-desktop@1x.jpg 1x, img/trainer-3-desktop@2x.jpg 2x" width="238" height="212" alt="Надежда Колесниченко.">
@@ -471,6 +510,9 @@
                 </div>
                 <div class="training__slide instructor swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-4-mobile@1x.webp 1x, img/trainer-4-mobile@2x.webp 2x" width="250" height="212">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-4-tablet@1x.webp 1x, img/trainer-4-tablet@2x.webp 2x" width="176" height="212">
+                    <source type="image/webp" srcset="img/trainer-4-desktop@1x.webp 1x, img/trainer-4-desktop@2x.webp 2x" width="238" height="212">
                     <source media="(max-width: 767px)" srcset="img/trainer-4-mobile@1x.jpg 1x, img/trainer-4-mobile@2x.jpg 2x" width="250" height="212">
                     <source media="(max-width: 1199px)" srcset="img/trainer-4-tablet@1x.jpg 1x, img/trainer-4-tablet@2x.jpg 2x" width="176" height="212">
                     <img src="img/trainer-4-desktop@1x.jpg" srcset="img/trainer-4-desktop@1x.jpg 1x, img/trainer-4-desktop@2x.jpg 2x" width="238" height="212" alt="Федор Кайгородов.">
@@ -489,6 +531,9 @@
                 </div>
                 <div class="training__slide instructor swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-1-mobile@1x.webp 1x, img/trainer-1-mobile@2x.webp 2x" width="250" height="212">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-1-tablet@1x.webp 1x, img/trainer-1-tablet@2x.webp 2x" width="176" height="212">
+                    <source type="image/webp" srcset="img/trainer-1-desktop@1x.webp 1x, img/trainer-1-desktop@2x.webp 2x" width="238" height="212">
                     <source media="(max-width: 767px)" srcset="img/trainer-1-mobile@1x.jpg 1x, img/trainer-1-mobile@2x.jpg 2x" width="250" height="212">
                     <source media="(max-width: 1199px)" srcset="img/trainer-1-tablet@1x.jpg 1x, img/trainer-1-tablet@2x.jpg 2x" width="176" height="212">
                     <img src="img/trainer-1-desktop@1x.jpg" srcset="img/trainer-1-desktop@1x.jpg 1x, img/trainer-1-desktop@2x.jpg 2x" width="238" height="212" alt="Александр Прокофьев.">
@@ -549,9 +594,12 @@
         <section class="about-us">
           <div class="container">
             <picture>
-              <source media="(max-width: 767px)" srcset="img/about-us-image-mobile.png" width="320" height="402">
-              <source media="(max-width: 1199px)" srcset="img/about-us-image-tablet.png" width="475" height="402">
-              <img src="img/about-us-image-desktop.png" srcset="img/about-us-image-desktop.png 1x" width="808" height="474" alt="Туристы в горах.">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/about-us-image-mobile@1x.webp 1x, img/about-us-image-mobile@2x.webp 2x" width="320" height="402">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/about-us-image-tablet@1x.webp 1x, img/about-us-image-tablet@2x.webp 2x" width="475" height="402">
+              <source type="image/webp" srcset="img/about-us-image-desktop@1x.webp 1x, img/about-us-image-desktop@2x.webp 2x" width="808" height="474">
+              <source media="(max-width: 767px)" srcset="img/about-us-image-mobile@1x.png 1x, img/about-us-image-mobile@2x.png 2x" width="320" height="402">
+              <source media="(max-width: 1199px)" srcset="img/about-us-image-tablet@1x.png 1x, img/about-us-image-tablet@2x.png 2x" width="475" height="402">
+              <img src="img/about-us-image-desktop@1x.png" srcset="img/about-us-image-desktop@1x.png 1x, img/about-us-image-desktop@2x.png 2x" width="808" height="474" alt="Туристы в горах.">
             </picture>
             <div class="about-us__text-content">
               <div class="about-us__title">
@@ -591,6 +639,9 @@
               <div class="reviews__slider-wrapper swiper-wrapper">
                 <div class="reviews__slide review swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/review-1-mobile@1x.webp 1x, img/review-1-mobile@2x.webp 2x" width="250" height="169">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/review-1-tablet@1x.webp 1x, img/review-1-tablet@2x.webp 2x" width="186" height="237">
+                    <source type="image/webp" srcset="img/review-1-desktop@1x.webp 1x, img/review-1-desktop@2x.webp 2x" width="258" height="253">
                     <source media="(max-width: 767px)" srcset="img/review-1-mobile@1x.jpg 1x, img/review-1-mobile@2x.jpg 2x" width="250" height="169">
                     <source media="(max-width: 1199px)" srcset="img/review-1-tablet@1x.jpg 1x, img/review-1-tablet@2x.jpg 2x" width="186" height="237">
                     <img src="img/review-1-desktop@1x.jpg" srcset="img/review-1-desktop@1x.jpg 1x, img/review-1-desktop@2x.jpg 2x" width="258" height="253" alt="Фролов Александр.">
@@ -616,6 +667,9 @@
                 </div>
                 <div class="reviews__slide review swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/review-2-mobile@1x.webp 1x, img/review-2-mobile@2x.webp 2x" width="250" height="169">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/review-2-tablet@1x.webp 1x, img/review-2-tablet@2x.webp 2x" width="186" height="237">
+                    <source type="image/webp" srcset="img/review-2-desktop@1x.webp 1x, img/review-2-desktop@2x.webp 2x" width="258" height="253">
                     <source media="(max-width: 767px)" srcset="img/review-2-mobile@1x.jpg 1x, img/review-2-mobile@2x.jpg 2x" width="250" height="169">
                     <source media="(max-width: 1199px)" srcset="img/review-2-tablet@1x.jpg 1x, img/review-2-tablet@2x.jpg 2x" width="186" height="237">
                     <img src="img/review-2-desktop@1x.jpg" srcset="img/review-2-desktop@1x.jpg 1x, img/review-2-desktop@2x.jpg 2x" width="258" height="253" alt="Иван Соловьев.">
@@ -641,6 +695,9 @@
                 </div>
                 <div class="reviews__slide review swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/review-3-mobile@1x.webp 1x, img/review-3-mobile@2x.webp 2x" width="250" height="169">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/review-3-tablet@1x.webp 1x, img/review-3-tablet@2x.webp 2x" width="186" height="237">
+                    <source type="image/webp" srcset="img/review-3-desktop@1x.webp 1x, img/review-3-desktop@2x.webp 2x" width="258" height="253">
                     <source media="(max-width: 767px)" srcset="img/review-3-mobile@1x.jpg 1x, img/review-3-mobile@2x.jpg 2x" width="250" height="169">
                     <source media="(max-width: 1199px)" srcset="img/review-3-tablet@1x.jpg 1x, img/review-3-tablet@2x.jpg 2x" width="186" height="237">
                     <img src="img/review-3-desktop@1x.jpg" srcset="img/review-3-desktop@1x.jpg 1x, img/review-3-desktop@2x.jpg 2x" width="258" height="253" alt="Евгения Баженова.">
@@ -666,6 +723,9 @@
                 </div>
                 <div class="reviews__slide review swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/review-4-mobile@1x.webp 1x, img/review-4-mobile@2x.webp 2x" width="250" height="169">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/review-4-tablet@1x.webp 1x, img/review-4-tablet@2x.webp 2x" width="186" height="237">
+                    <source type="image/webp" srcset="img/review-4-desktop@1x.webp 1x, img/review-4-desktop@2x.webp 2x" width="258" height="253">
                     <source media="(max-width: 767px)" srcset="img/review-4-mobile@1x.jpg 1x, img/review-4-mobile@2x.jpg 2x" width="250" height="169">
                     <source media="(max-width: 1199px)" srcset="img/review-4-tablet@1x.jpg 1x, img/review-4-tablet@2x.jpg 2x" width="186" height="237">
                     <img src="img/review-4-desktop@1x.jpg" srcset="img/review-4-desktop@1x.jpg 1x, img/review-4-desktop@2x.jpg 2x" width="258" height="253" alt="Елена Пирогова.">
@@ -790,54 +850,74 @@
               <div class="gallery__slider-wrapper swiper-wrapper">
                 <div class="gallery__slide swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/gallery-photo-1-mobile@1x.webp 1x, img/gallery-photo-1-mobile@2x.webp 2x" width="159" height="260">
+                    <source type="image/webp" srcset="img/gallery-photo-1-desktop@1x.webp 1x, img/gallery-photo-1-desktop@2x.webp 2x" width="275" height="449">
                     <source media="(max-width: 767px)" srcset="img/gallery-photo-1-mobile@1x.jpg 1x, img/gallery-photo-1-mobile@2x.jpg 2x" width="159" height="260">
                     <img src="img/gallery-photo-1-desktop@1x.jpg" srcset="img/gallery-photo-1-desktop@1x.jpg 1x, img/gallery-photo-1-desktop@2x.jpg 2x" width="275" height="449" alt="Фото в галерее.">
                   </picture>
                 </div>
                 <div class="gallery__slide swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/gallery-photo-2-mobile@1x.webp 1x, img/gallery-photo-2-mobile@2x.webp 2x" width="172" height="103">
+                    <source type="image/webp" srcset="img/gallery-photo-2-desktop@1x.webp 1x, img/gallery-photo-2-desktop@2x.webp 2x" width="298" height="179">
                     <source media="(max-width: 767px)" srcset="img/gallery-photo-2-mobile@1x.jpg 1x, img/gallery-photo-2-mobile@2x.jpg 2x" width="172" height="103">
                     <img src="img/gallery-photo-2-desktop@1x.jpg" srcset="img/gallery-photo-2-desktop@1x.jpg 1x, img/gallery-photo-2-desktop@2x.jpg 2x" width="298" height="179" alt="Фото в галерее.">
                   </picture>
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/gallery-photo-3-mobile@1x.webp 1x, img/gallery-photo-3-mobile@2x.webp 2x" width="172" height="153">
+                    <source type="image/webp" srcset="img/gallery-photo-3-desktop@1x.webp 1x, img/gallery-photo-3-desktop@2x.webp 2x" width="298" height="265">
                     <source media="(max-width: 767px)" srcset="img/gallery-photo-3-mobile@1x.jpg 1x, img/gallery-photo-3-mobile@2x.jpg 2x" width="172" height="153">
                     <img src="img/gallery-photo-3-desktop@1x.jpg" srcset="img/gallery-photo-3-desktop@1x.jpg 1x, img/gallery-photo-3-desktop@2x.jpg 2x" width="298" height="265" alt="Фото в галерее.">
                   </picture>
                 </div>
                 <div class="gallery__slide swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/gallery-photo-4-mobile@1x.webp 1x, img/gallery-photo-4-mobile@2x.webp 2x" width="159" height="260">
+                    <source type="image/webp" srcset="img/gallery-photo-4-desktop@1x.webp 1x, img/gallery-photo-4-desktop@2x.webp 2x" width="272" height="449">
                     <source media="(max-width: 767px)" srcset="img/gallery-photo-4-mobile@1x.jpg 1x, img/gallery-photo-4-mobile@2x.jpg 2x" width="159" height="260">
                     <img src="img/gallery-photo-4-desktop@1x.jpg" srcset="img/gallery-photo-4-desktop@1x.jpg 1x, img/gallery-photo-4-desktop@2x.jpg 2x" width="272" height="449" alt="Фото в галерее.">
                   </picture>
                 </div>
                 <div class="gallery__slide swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/gallery-photo-5-mobile@1x.webp 1x, img/gallery-photo-5-mobile@2x.webp 2x" width="172" height="103">
+                    <source type="image/webp" srcset="img/gallery-photo-5-desktop@1x.webp 1x, img/gallery-photo-5-desktop@2x.webp 2x" width="298" height="179">
                     <source media="(max-width: 767px)" srcset="img/gallery-photo-5-mobile@1x.jpg 1x, img/gallery-photo-5-mobile@2x.jpg 2x" width="172" height="103">
                     <img src="img/gallery-photo-5-desktop@1x.jpg" srcset="img/gallery-photo-5-desktop@1x.jpg 1x, img/gallery-photo-5-desktop@2x.jpg 2x" width="298" height="179" alt="Фото в галерее.">
                   </picture>
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/gallery-photo-6-mobile@1x.webp 1x, img/gallery-photo-6-mobile@2x.webp 2x" width="172" height="153">
+                    <source type="image/webp" srcset="img/gallery-photo-6-desktop@1x.webp 1x, img/gallery-photo-6-desktop@2x.webp 2x" width="298" height="265">
                     <source media="(max-width: 767px)" srcset="img/gallery-photo-6-mobile@1x.jpg 1x, img/gallery-photo-6-mobile@2x.jpg 2x" width="172" height="153">
                     <img src="img/gallery-photo-6-desktop@1x.jpg" srcset="img/gallery-photo-6-desktop@1x.jpg 1x, img/gallery-photo-6-desktop@2x.jpg 2x" width="298" height="265" alt="Фото в галерее.">
                   </picture>
                 </div>
                 <div class="gallery__slide swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/gallery-photo-7-mobile@1x.webp 1x, img/gallery-photo-7-mobile@2x.webp 2x" width="159" height="260">
+                    <source type="image/webp" srcset="img/gallery-photo-7-desktop@1x.webp 1x, img/gallery-photo-7-desktop@2x.webp 2x" width="276" height="449">
                     <source media="(max-width: 767px)" srcset="img/gallery-photo-7-mobile@1x.jpg 1x, img/gallery-photo-7-mobile@2x.jpg 2x" width="159" height="260">
                     <img src="img/gallery-photo-7-desktop@1x.jpg" srcset="img/gallery-photo-7-desktop@1x.jpg 1x, img/gallery-photo-7-desktop@2x.jpg 2x" width="276" height="449" alt="Фото в галерее.">
                   </picture>
                 </div>
                 <div class="gallery__slide swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/gallery-photo-2-mobile@1x.webp 1x, img/gallery-photo-2-mobile@2x.webp 2x" width="172" height="103">
+                    <source type="image/webp" srcset="img/gallery-photo-2-desktop@1x.webp 1x, img/gallery-photo-2-desktop@2x.webp 2x" width="298" height="179">
                     <source media="(max-width: 767px)" srcset="img/gallery-photo-2-mobile@1x.jpg 1x, img/gallery-photo-2-mobile@2x.jpg 2x" width="172" height="103">
                     <img src="img/gallery-photo-2-desktop@1x.jpg" srcset="img/gallery-photo-2-desktop@1x.jpg 1x, img/gallery-photo-2-desktop@2x.jpg 2x" width="298" height="179" alt="Фото в галерее.">
                   </picture>
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/gallery-photo-3-mobile@1x.webp 1x, img/gallery-photo-3-mobile@2x.webp 2x" width="172" height="153">
+                    <source type="image/webp" srcset="img/gallery-photo-3-desktop@1x.webp 1x, img/gallery-photo-3-desktop@2x.webp 2x" width="298" height="265">
                     <source media="(max-width: 767px)" srcset="img/gallery-photo-3-mobile@1x.jpg 1x, img/gallery-photo-3-mobile@2x.jpg 2x" width="172" height="153">
                     <img src="img/gallery-photo-3-desktop@1x.jpg" srcset="img/gallery-photo-3-desktop@1x.jpg 1x, img/gallery-photo-3-desktop@2x.jpg 2x" width="298" height="265" alt="Фото в галерее.">
                   </picture>
                 </div>
                 <div class="gallery__slide swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/gallery-photo-1-mobile@1x.webp 1x, img/gallery-photo-1-mobile@2x.webp 2x" width="159" height="260">
+                    <source type="image/webp" srcset="img/gallery-photo-1-desktop@1x.webp 1x, img/gallery-photo-1-desktop@2x.webp 2x" width="275" height="449">
                     <source media="(max-width: 767px)" srcset="img/gallery-photo-1-mobile@1x.jpg 1x, img/gallery-photo-1-mobile@2x.jpg 2x" width="159" height="260">
                     <img src="img/gallery-photo-1-desktop@1x.jpg" srcset="img/gallery-photo-1-desktop@1x.jpg 1x, img/gallery-photo-1-desktop@2x.jpg 2x" width="275" height="449" alt="Фото в галерее.">
                   </picture>

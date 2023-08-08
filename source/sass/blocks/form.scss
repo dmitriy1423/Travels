@@ -1,6 +1,6 @@
 .form {
   background-color: #6d7c55;
-  background-image: url("../img/form-background-desktop.jpg");
+  background-image: image-set("../img/form-background-desktop@1x.webp" 1x, "../img/form-background-desktop@2x.webp" 2x, "../img/form-background-desktop@1x.jpg" 1x, "../img/form-background-desktop@2x.jpg" 2x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -59,11 +59,11 @@
   }
 
   @include vp-1199 {
-    background-image: url("../img/form-background-tablet.jpg");
+    background-image: image-set("../img/form-background-tablet@1x.webp" 1x, "../img/form-background-tablet@2x.webp" 2x, "../img/form-background-tablet@1x.jpg" 1x, "../img/form-background-tablet@2x.jpg" 2x);
   }
 
   @include vp-767 {
-    background-image: url("../img/form-background-mobile.jpg");
+    background-image: image-set("../img/form-background-mobile@1x.webp" 1x, "../img/form-background-mobile@2x.webp" 2x, "../img/form-background-mobile@1x.jpg" 1x, "../img/form-background-mobile@2x.jpg" 2x);
   }
 }
 

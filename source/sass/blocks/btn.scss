@@ -5,9 +5,23 @@
   padding: 17px 55px;
   color: $color-default-white;
   background-color: $color-button-default;
+  outline: 1px solid $color-button-default;
   border: none;
   cursor: pointer;
   transition: opacity $trans-default;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid #1c3374;
+    background-color: $color-background-default;
+    color: #1c3374;
+  }
+
+  &:active {
+    outline: 1px solid #1c3374;
+    background-color: #1c3374;
+    color: $color-default-white;
+  }
 
   &:disabled {
     opacity: 0.5;
@@ -20,10 +34,6 @@
 
   @include vp-767 {
     padding: 14px 35px;
-  }
-
-  @include hover-focus {
-    opacity: 0.8;
   }
 
   &--form {

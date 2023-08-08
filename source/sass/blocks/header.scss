@@ -24,6 +24,10 @@
   }
 
   &.is-open {
+    + .hero .container {
+      background: $color-overlay-menu;
+    }
+
     .container {
       @include vp-1199 {
         padding-top: 30px;
@@ -137,21 +141,60 @@
 }
 
 .header__link {
+  position: relative;
   color: $color-default-white;
   font-size: 16px;
   line-height: 16px;
+
+  &:hover:not(:disabled):not([aria-disabled="true"]) {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      width: 100%;
+      height: 1px;
+      background-color: $color-background-default;
+    }
+  }
+
+  &:focus:not(:disabled):not([aria-disabled="true"]) {
+    &::before {
+      content: none;
+    }
+
+    outline: 1px solid $color-background-default;
+    outline-offset: 3px;
+  }
+
+  &:active:not(:disabled):not([aria-disabled="true"]) {
+    &::before {
+      content: none;
+    }
+
+    outline: none;
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    &::before {
+      content: none;
+    }
+
+    outline: none;
+    color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .header__burger {
   padding: 0;
   margin: 0;
   display: none;
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   border: none;
   background-color: $color-icon-light;
   mask-image: url("../img/sprite/icon-open-menu.svg");
-  mask-size: 22px 22px;
+  mask-size: 26px 26px;
   mask-repeat: no-repeat;
   mask-position: center;
   cursor: pointer;
@@ -198,6 +241,20 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 600;
+
+  &:hover:not(:disabled):not([aria-disabled="true"]),
+  &:focus:not(:disabled):not([aria-disabled="true"]) {
+    color: #1c3374;
+  }
+
+  &:active:not(:disabled):not([aria-disabled="true"]) {
+    color: $color-button-default;
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    color: rgba(2, 102, 193, 0.1);
+  }
 
   @include vp-1199 {
     justify-self: flex-end;

@@ -1,27 +1,16 @@
 .logo {
   display: block;
 
-  /* @include vp-1199 {
-    width: 144px;
-    height: 44px;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
   }
 
-  @include vp-767 {
-    width: 112px;
-    height: 34px;
-  } */
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .logo__icon {
   fill: $color-default-black;
-
-  /* @include vp-1199 {
-    width: 144px;
-    height: 44px;
-  }
-
-  @include vp-767 {
-    width: 112px;
-    height: 34px;
-  } */
 }

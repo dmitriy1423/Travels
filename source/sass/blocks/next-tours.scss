@@ -131,7 +131,7 @@
   position: absolute;
   z-index: 3;
   right: 0;
-  top: -54px;
+  top: -90px;
   display: flex;
   gap: 5px;
 
@@ -164,9 +164,35 @@
     content: "";
     width: 12px;
     height: 14px;
-    background-image: url("../../img/sprite/icon-small-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    mask-image: url("../img/sprite/icon-small-arrow-right.svg");
+    mask-size: 12px 14px;
+    background-color: $color-default-black;
+  }
+
+  &:hover:not(:disabled):not([aria-disabled="true"]),
+  &:focus:not(:disabled):not([aria-disabled="true"]) {
+    color: #1c3374;
+
+    &::after {
+      background-color: #1c3374;
+    }
+  }
+
+  &:active:not(:disabled):not([aria-disabled="true"]) {
+    color: $color-icon-additional;
+
+    &::after {
+      background-color: $color-icon-additional;
+    }
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    color: rgba(2, 102, 193, 0.1);
+
+    &::after {
+      background-color: rgba(2, 102, 193, 0.1);
+    }
   }
 
   @include vp-767 {
