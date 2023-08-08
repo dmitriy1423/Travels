@@ -3288,7 +3288,7 @@ button,
   bottom: 0;
   width: 837px;
   height: 279px;
-  background-image: url("../../img/next-tours-clouds-1-desktop.png");
+  background-image: url("../img/next-tours-clouds-1-desktop.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -3305,7 +3305,7 @@ button,
   top: -20px;
   width: 602px;
   height: 1364px;
-  background-image: url("../../img/next-tours-clouds-2-desktop.png");
+  background-image: url("../img/next-tours-clouds-2-desktop.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -3319,7 +3319,7 @@ button,
   .next-tours__container::after {
     width: 346px;
     height: 595px;
-    background-image: url("../../img/next-tours-clouds-2-mobile.png");
+    background-image: url("../img/next-tours-clouds-2-mobile.png");
     right: -53%;
     top: 137px;
   }
@@ -4067,22 +4067,22 @@ button,
 .process__item--map span {
   width: 25px;
   height: 25px;
-  background-image: url("../../img/sprite/icon-map.svg");
+  background-image: url("../img/sprite/icon-map.svg");
 }
 .process__item--boots span {
   width: 24px;
   height: 24px;
-  background-image: url("../../img/sprite/icon-boots.svg");
+  background-image: url("../img/sprite/icon-boots.svg");
 }
 .process__item--tree span {
   width: 23px;
   height: 23px;
-  background-image: url("../../img/sprite/icon-pine-tree.svg");
+  background-image: url("../img/sprite/icon-pine-tree.svg");
 }
 .process__item--mountain span {
   width: 25px;
   height: 25px;
-  background-image: url("../../img/sprite/icon-mountain.svg");
+  background-image: url("../img/sprite/icon-mountain.svg");
 }
 @media (max-width: 1199px) {
   .process__item::before {
