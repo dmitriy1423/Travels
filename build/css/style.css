@@ -2493,54 +2493,6 @@ button,
   }
 }
 
-.navigation {
-  /* position: relative;
-  display: grid;
-  grid-template-columns: 205px 1fr auto;
-  align-items: center;
-
-  @include vp-1199 {
-    grid-template-columns: 1fr 144px 1fr;
-  }
-
-  @include vp-767 {
-    grid-template-columns: auto 1fr;
-    gap: 5px 0;
-  } */
-}
-
-/* .navigation--closed .navigation__toggle {
-  mask-image: url("../img/sprite/icon-open-menu.svg");
-}
-
-.navigation--closed .navigation__list {
-  @include vp-1199 {
-    display: none;
-  }
-} */
-/* .navigation--opened {
-  @include vp-1199 {
-    background-color: $color-default-white;
-  }
-} */
-/* .navigation--opened .navigation__list {
-  @include vp-1199 {
-    position: absolute;
-    top: 100%;
-    left: -45px;
-    width: 100vw;
-    background-color: $color-background-default;
-    z-index: 2;
-  }
-}
-
-.navigation--nojs .navigation__toggle {
-  display: none;
-}
-
-.navigation--nojs .navigation__list {
-  display: flex;
-} */
 .navigation__toggle {
   padding: 0;
   margin: 0;
@@ -2571,32 +2523,6 @@ button,
   }
 }
 
-/* .navigation__list {
-  justify-content: center;
-}
-
-.navigation__logo {
-  @include vp-1199 {
-    grid-column: 2 / 3;
-  }
-
-  @include vp-767 {
-    grid-column: 2 / -1;
-    justify-self: flex-end;
-  }
-}
-
-.navigation__tel {
-  grid-column: 3 / -1;
-
-  @include vp-1199 {
-    justify-self: flex-end;
-  }
-
-  @include vp-767 {
-    grid-column: 2 / -1;
-  }
-} */
 .logo {
   display: block;
 }
@@ -3245,39 +3171,6 @@ button,
   }
 }
 
-/* .rating {
-  width: 79px;
-  height: 14px;
-  position: relative;
-  display: block;
-  font-size: 0;
-
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 79px;
-    height: 100%;
-    background: url("../../img/sprite/icon-stars.svg") transparent no-repeat center;
-    background-size: 79px 14px;
-  }
-
-  span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    width: 80%;
-    height: 100%;
-    overflow: hidden;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      height: 100%;
-      background: url("../../img/sprite/icon-stars-active.svg") transparent no-repeat center;
-    }
-  }
-} */
 .shadow-title {
   position: relative;
   z-index: 0;
