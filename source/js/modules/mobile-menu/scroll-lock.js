@@ -1,4 +1,4 @@
-import {iosChecker} from './ios-checker';
+import {iosChecker} from '../../utils/ios-checker';
 
 export class ScrollLock {
   constructor() {

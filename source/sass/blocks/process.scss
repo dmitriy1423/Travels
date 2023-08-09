@@ -64,50 +64,22 @@
 
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 24px 24px;
-
-  span {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-
-    @include vp-767 {
-      left: 30px;
-    }
-  }
+  background-size: 25px 25px;
 
   &--map {
-    span {
-      width: 25px;
-      height: 25px;
-      background-image: url("../img/sprite/icon-map.svg");
-    }
+    background-image: url("../img/sprite/icon-map.svg");
   }
 
   &--boots {
-    span {
-      width: 24px;
-      height: 24px;
-      background-image: url("../img/sprite/icon-boots.svg");
-    }
+    background-image: url("../img/sprite/icon-boots.svg");
   }
 
   &--tree {
-    span {
-      width: 23px;
-      height: 23px;
-      background-image: url("../img/sprite/icon-pine-tree.svg");
-    }
+    background-image: url("../img/sprite/icon-pine-tree.svg");
   }
 
   &--mountain {
-    span {
-      width: 25px;
-      height: 25px;
-      background-image: url("../img/sprite/icon-mountain.svg");
-    }
+    background-image: url("../img/sprite/icon-mountain.svg");
   }
 
   &::before {

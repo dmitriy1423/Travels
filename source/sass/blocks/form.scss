@@ -8,14 +8,17 @@
   text-align: center;
 
   .container {
-    padding: 308px 231px;
+    padding-top: 308px;
+    padding-bottom: 308px;
 
     @include vp-1199 {
-      padding: 196px 236px 183px;
+      padding-top: 196px;
+      padding-bottom: 183px;
     }
 
     @include vp-767 {
-      padding: 181px 15px 175px;
+      padding-top: 181px;
+      padding-bottom: 175px;
     }
   }
 
@@ -68,17 +71,20 @@
 }
 
 .form__wrapper form {
+  max-width: 978px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 0.7fr;
   gap: 30px;
 
   @include vp-1199 {
+    max-width: 266px;
     grid-template-columns: 1fr;
     gap: 7px;
-    padding: 0 15px;
   }
 
   @include vp-767 {
+    max-width: 100%;
     padding: 0;
   }
 }

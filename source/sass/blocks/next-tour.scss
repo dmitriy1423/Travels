@@ -1,5 +1,6 @@
 .next-tour {
   position: relative;
+  padding: 206px 20px 28px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 61.9%, rgba(0, 0, 0, 0) 100%);
   color: $color-default-white;
   font-size: 12px;
@@ -12,30 +13,13 @@
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     z-index: -1;
     background-color: #108fd8;
   }
 
-  .container {
-    padding: 206px 20px 28px;
-    display: grid;
-    grid-template-columns: 108px 80px 80px;
-    justify-content: space-between;
-
-    @include vp-1199 {
-      grid-template-columns: auto 80px 80px;
-      gap: 0 17px;
-    }
-
-    @include vp-767 {
-      padding: 197px 20px 24px;
-      gap: 0;
-    }
-  }
-
   h3 {
     position: relative;
-    grid-column: 1 / -1;
     margin-top: 23px;
     margin-bottom: 38px;
     width: 240px;
@@ -63,7 +47,6 @@
   }
 
   dl {
-    grid-column: 1 / -1;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -73,7 +56,7 @@
     gap: 6px 0;
 
     @include vp-767 {
-      grid-template-columns: 72px 84px 80px;
+      grid-template-columns: repeat(3, auto);
       justify-content: stretch;
       gap: 6px 15px;
     }
@@ -94,19 +77,6 @@
       background-image: url("../img/sprite/icon-stars.svg");
       background-size: 79px 14px;
 
-      span {
-        position: absolute;
-        z-index: 3;
-        left: 0;
-        height: 100%;
-        background-image: url("../img/sprite/icon-stars-active.svg");
-        background-size: 79px 14px;
-
-        @include vp-767 {
-          background-size: 72px 12px;
-        }
-      }
-
       @include vp-767 {
         width: 72px;
         height: 12px;
@@ -114,10 +84,40 @@
       }
     }
   }
+
+  @include vp-767 {
+    padding: 197px 20px 24px;
+  }
+}
+
+.next-tour__rating {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  height: 100%;
+  background-image: url("../img/sprite/icon-stars-active.svg");
+  background-size: 79px 14px;
+
+  @include vp-767 {
+    background-size: 72px 12px;
+  }
+}
+
+.next-tour__inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: 76px 82px;
+    justify-content: stretch;
+    gap: 16px;
+  }
 }
 
 .next-tour__place {
-  grid-column: 1 / 2;
+  width: 108px;
   position: relative;
   display: flex;
   align-items: center;
@@ -132,10 +132,13 @@
     background-image: url("../img/sprite/icon-pin.svg");
   }
 
+  @include vp-1199 {
+    width: fit-content;
+  }
+
   @include vp-767 {
     width: fit-content;
-    grid-column: 1 / 3;
-    margin-top: 15px;
+    order: 3;
   }
 }
 
@@ -149,7 +152,7 @@
 }
 
 .next-tour__days {
-  grid-column: 2 / 3;
+  width: 76px;
 
   &::before {
     content: "";
@@ -158,15 +161,18 @@
     background-image: url("../img/sprite/icon-sun.svg");
   }
 
+  @include vp-1199 {
+    width: 73px;
+  }
+
   @include vp-767 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
     width: 76px;
+    order: 1;
   }
 }
 
 .next-tour__nights {
-  grid-column: 3 / -1;
+  width: 82px;
 
   &::before {
     content: "";
@@ -175,9 +181,12 @@
     background-image: url("../img/sprite/icon-next-tour-moon.svg");
   }
 
+  @include vp-1199 {
+    width: 80px;
+  }
+
   @include vp-767 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
     width: 82px;
+    order: 2;
   }
 }

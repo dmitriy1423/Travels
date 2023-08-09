@@ -19,7 +19,7 @@
   <body>
     <div class="wrapper">
       <header class="header" data-header>
-        <div class="container header__container">
+        <div class="container">
           <h1 class="visually-hidden">
             Lifetour - организация походов в горы
           </h1>
@@ -63,10 +63,12 @@
             </ul>
           </nav>
           <button class="header__burger" type="button" aria-label="Открыть/закрыть меню." data-burger>
+            <span></span>
           </button>
           <a class="header__tel" href="tel:+78007253232">
             8 800 725 32 32
           </a>
+          <div class="header__overlay"></div>
         </div>
       </header>
       <section class="hero">
@@ -94,9 +96,8 @@
                 <div class="hero__video-wrapper">
                   <div class="hero__video" data-src="https://www.youtube-nocookie.com/embed/9TZXsZItgdw?autoplay=1">
                     <button class="hero__video-play" type="button" aria-label="Запустить видео">
-                      <svg class="hero__video-icon-play" width="56" height="56" viewBox="0 0 56 56" fill="defaultColor" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="28" cy="28" r="27.5" fill-opacity="0.2"/>
-                        <path d="M37 28L25 17V39L37 28Z"/>
+                      <svg class="hero__video-icon-play" width="12" height="22" viewBox="0 0 12 22" fill="defaultColor" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/sprite.svg#icon-video-play"></use>
                       </svg>
                     </button>
                   </div>
@@ -218,7 +219,7 @@
       <main class="main">
         <section class="next-tours">
           <div class="container next-tours__container">
-            <div class="next-tours__title">
+            <div class="next-tours__title shadow-title">
               <h2>
                 Ближайшие туры
               </h2>
@@ -237,7 +238,7 @@
                     <source media="(max-width: 1199px)" srcset="img/next-tour-elbrus-tablet@1x.jpg 1x, img/next-tour-elbrus-tablet@2x.jpg 2x" width="324" height="412">
                     <img src="img/next-tour-elbrus-desktop@1x.jpg" srcset="img/next-tour-elbrus-desktop@1x.jpg 1x, img/next-tour-elbrus-desktop@2x.jpg 2x" width="380" height="412" alt="Эльбрус.">
                   </picture>
-                  <div class="container">
+                  <div class="next-tour__inner-wrapper">
                     <div class="next-tour__place">
                       Кавказ
                     </div>
@@ -247,31 +248,31 @@
                     <div class="next-tour__nights">
                       3 ночи
                     </div>
-                    <h3>
-                      Путешествие вокруг Эльбруса
-                    </h3>
-                    <dl>
-                      <dt>
-                        Сложность:
-                      </dt>
-                      <dd>
-                        <span class="visually-hidden">3 / 5</span>
-                        <span class="next-tour__rating" style="width: 60%"></span>
-                      </dd>
-                      <dt>
-                        Даты набора:
-                      </dt>
-                      <dd>
-                        12.06-19.06
-                      </dd>
-                      <dt>
-                        Группа:
-                      </dt>
-                      <dd>
-                        до 15 чел.
-                      </dd>
-                    </dl>
                   </div>
+                  <h3>
+                    Путешествие вокруг Эльбруса
+                  </h3>
+                  <dl>
+                    <dt>
+                      Сложность:
+                    </dt>
+                    <dd>
+                      <span class="visually-hidden">3 / 5</span>
+                      <span class="next-tour__rating" style="width: 60%"></span>
+                    </dd>
+                    <dt>
+                      Даты набора:
+                    </dt>
+                    <dd>
+                      12.06-19.06
+                    </dd>
+                    <dt>
+                      Группа:
+                    </dt>
+                    <dd>
+                      до 15 чел.
+                    </dd>
+                  </dl>
                 </div>
                 <div class="next-tours__slide next-tour swiper-slide">
                   <picture>
@@ -282,7 +283,7 @@
                     <source media="(max-width: 1199px)" srcset="img/next-tour-belukha-tablet@1x.jpg 1x, img/next-tour-belukha-tablet@2x.jpg 2x" width="324" height="412">
                     <img src="img/next-tour-belukha-desktop@1x.jpg" srcset="img/next-tour-belukha-desktop@1x.jpg 1x, img/next-tour-belukha-desktop@2x.jpg 2x" width="380" height="412" alt="Белуха.">
                   </picture>
-                  <div class="container">
+                  <div class="next-tour__inner-wrapper">
                     <div class="next-tour__place">
                       Алтай
                     </div>
@@ -292,31 +293,31 @@
                     <div class="next-tour__nights">
                       13 ночей
                     </div>
-                    <h3>
-                      Путь к&nbsp;подножию Белухи
-                    </h3>
-                    <dl>
-                      <dt>
-                        Сложность:
-                      </dt>
-                      <dd>
-                        <span class="visually-hidden">2 / 5</span>
-                        <span class="next-tour__rating" style="width: 40%"></span>
-                      </dd>
-                      <dt>
-                        Даты набора:
-                      </dt>
-                      <dd>
-                        14.06-23.06
-                      </dd>
-                      <dt>
-                        Группа:
-                      </dt>
-                      <dd>
-                        до 25 чел.
-                      </dd>
-                    </dl>
                   </div>
+                  <h3>
+                    Путь к&nbsp;подножию Белухи
+                  </h3>
+                  <dl>
+                    <dt>
+                      Сложность:
+                    </dt>
+                    <dd>
+                      <span class="visually-hidden">2 / 5</span>
+                      <span class="next-tour__rating" style="width: 40%"></span>
+                    </dd>
+                    <dt>
+                      Даты набора:
+                    </dt>
+                    <dd>
+                      14.06-23.06
+                    </dd>
+                    <dt>
+                      Группа:
+                    </dt>
+                    <dd>
+                      до 25 чел.
+                    </dd>
+                  </dl>
                 </div>
                 <div class="next-tours__slide next-tour swiper-slide">
                   <picture>
@@ -327,7 +328,7 @@
                     <source media="(max-width: 1199px)" srcset="img/next-tour-fisht-tablet@1x.jpg 1x, img/next-tour-fisht-tablet@2x.jpg 2x" width="324" height="412">
                     <img src="img/next-tour-fisht-desktop@1x.jpg" srcset="img/next-tour-fisht-desktop@1x.jpg 1x, img/next-tour-fisht-desktop@2x.jpg 2x" width="380" height="412" alt="Фишт.">
                   </picture>
-                  <div class="container">
+                  <div class="next-tour__inner-wrapper">
                     <div class="next-tour__place">
                       Адыгея
                     </div>
@@ -337,31 +338,31 @@
                     <div class="next-tour__nights">
                       6 ночей
                     </div>
-                    <h3>
-                      Через Фишт к&nbsp;Черному морю
-                    </h3>
-                    <dl>
-                      <dt>
-                        Сложность:
-                      </dt>
-                      <dd>
-                        <span class="visually-hidden">3 / 5</span>
-                        <span class="next-tour__rating" style="width: 60%"></span>
-                      </dd>
-                      <dt>
-                        Даты набора:
-                      </dt>
-                      <dd>
-                        15.07-19.07
-                      </dd>
-                      <dt>
-                        Группа:
-                      </dt>
-                      <dd>
-                        до 22 чел.
-                      </dd>
-                    </dl>
                   </div>
+                  <h3>
+                    Через Фишт к&nbsp;Черному морю
+                  </h3>
+                  <dl>
+                    <dt>
+                      Сложность:
+                    </dt>
+                    <dd>
+                      <span class="visually-hidden">3 / 5</span>
+                      <span class="next-tour__rating" style="width: 60%"></span>
+                    </dd>
+                    <dt>
+                      Даты набора:
+                    </dt>
+                    <dd>
+                      15.07-19.07
+                    </dd>
+                    <dt>
+                      Группа:
+                    </dt>
+                    <dd>
+                      до 22 чел.
+                    </dd>
+                  </dl>
                 </div>
                 <div class="next-tours__slide next-tour swiper-slide">
                   <picture>
@@ -372,7 +373,7 @@
                     <source media="(max-width: 1199px)" srcset="img/next-tour-elbrus-tablet@1x.jpg 1x, img/next-tour-elbrus-tablet@2x.jpg 2x" width="324" height="412">
                     <img src="img/next-tour-elbrus-desktop@1x.jpg" srcset="img/next-tour-elbrus-desktop@1x.jpg 1x, img/next-tour-elbrus-desktop@2x.jpg 2x" width="380" height="412" alt="Эльбрус.">
                   </picture>
-                  <div class="container">
+                  <div class="next-tour__inner-wrapper">
                     <div class="next-tour__place">
                       Кавказ
                     </div>
@@ -382,31 +383,31 @@
                     <div class="next-tour__nights">
                       3 ночи
                     </div>
-                    <h3>
-                      Путешествие вокруг Эльбруса
-                    </h3>
-                    <dl>
-                      <dt>
-                        Сложность:
-                      </dt>
-                      <dd>
-                        <span class="visually-hidden">3 / 5</span>
-                        <span class="next-tour__rating" style="width: 60%"></span>
-                      </dd>
-                      <dt>
-                        Даты набора:
-                      </dt>
-                      <dd>
-                        12.06-19.06
-                      </dd>
-                      <dt>
-                        Группа:
-                      </dt>
-                      <dd>
-                        до 15 чел.
-                      </dd>
-                    </dl>
                   </div>
+                  <h3>
+                    Путешествие вокруг Эльбруса
+                  </h3>
+                  <dl>
+                    <dt>
+                      Сложность:
+                    </dt>
+                    <dd>
+                      <span class="visually-hidden">3 / 5</span>
+                      <span class="next-tour__rating" style="width: 60%"></span>
+                    </dd>
+                    <dt>
+                      Даты набора:
+                    </dt>
+                    <dd>
+                      12.06-19.06
+                    </dd>
+                    <dt>
+                      Группа:
+                    </dt>
+                    <dd>
+                      до 15 чел.
+                    </dd>
+                  </dl>
                 </div>
               </div>
               <div class="next-tours__slider-buttons-wrapper">
@@ -429,7 +430,7 @@
         </section>
         <section class="training">
           <div class="container">
-            <div class="training__title">
+            <div class="training__title shadow-title">
               <h2>
                 Обучение
               </h2>
@@ -446,14 +447,16 @@
             <div class="training__slider swiper">
               <div class="training__slider-wrapper swiper-wrapper">
                 <div class="training__slide instructor swiper-slide">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-1-mobile@1x.webp 1x, img/trainer-1-mobile@2x.webp 2x" width="250" height="212">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-1-tablet@1x.webp 1x, img/trainer-1-tablet@2x.webp 2x" width="176" height="212">
-                    <source type="image/webp" srcset="img/trainer-1-desktop@1x.webp 1x, img/trainer-1-desktop@2x.webp 2x" width="238" height="212">
-                    <source media="(max-width: 767px)" srcset="img/trainer-1-mobile@1x.jpg 1x, img/trainer-1-mobile@2x.jpg 2x" width="250" height="212">
-                    <source media="(max-width: 1199px)" srcset="img/trainer-1-tablet@1x.jpg 1x, img/trainer-1-tablet@2x.jpg 2x" width="176" height="212">
-                    <img src="img/trainer-1-desktop@1x.jpg" srcset="img/trainer-1-desktop@1x.jpg 1x, img/trainer-1-desktop@2x.jpg 2x" width="238" height="212" alt="Александр Прокофьев.">
-                  </picture>
+                  <div class="instructor__image-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-1-mobile@1x.webp 1x, img/trainer-1-mobile@2x.webp 2x" width="250" height="212">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-1-tablet@1x.webp 1x, img/trainer-1-tablet@2x.webp 2x" width="176" height="212">
+                      <source type="image/webp" srcset="img/trainer-1-desktop@1x.webp 1x, img/trainer-1-desktop@2x.webp 2x" width="238" height="212">
+                      <source media="(max-width: 767px)" srcset="img/trainer-1-mobile@1x.jpg 1x, img/trainer-1-mobile@2x.jpg 2x" width="250" height="212">
+                      <source media="(max-width: 1199px)" srcset="img/trainer-1-tablet@1x.jpg 1x, img/trainer-1-tablet@2x.jpg 2x" width="176" height="212">
+                      <img src="img/trainer-1-desktop@1x.jpg" srcset="img/trainer-1-desktop@1x.jpg 1x, img/trainer-1-desktop@2x.jpg 2x" width="238" height="212" alt="Александр Прокофьев.">
+                    </picture>
+                  </div>
                   <h4>
                     Александр Прокофьев
                   </h4>
@@ -467,14 +470,16 @@
                   </p>
                 </div>
                 <div class="training__slide instructor swiper-slide">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-2-mobile@1x.webp 1x, img/trainer-2-mobile@2x.webp 2x" width="250" height="212">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-2-tablet@1x.webp 1x, img/trainer-2-tablet@2x.webp 2x" width="176" height="212">
-                    <source type="image/webp" srcset="img/trainer-2-desktop@1x.webp 1x, img/trainer-2-desktop@2x.webp 2x" width="238" height="212">
-                    <source media="(max-width: 767px)" srcset="img/trainer-2-mobile@1x.jpg 1x, img/trainer-2-mobile@2x.jpg 2x" width="250" height="212">
-                    <source media="(max-width: 1199px)" srcset="img/trainer-2-tablet@1x.jpg 1x, img/trainer-2-tablet@2x.jpg 2x" width="176" height="212">
-                    <img src="img/trainer-2-desktop@1x.jpg" srcset="img/trainer-2-desktop@1x.jpg 1x, img/trainer-2-desktop@2x.jpg 2x" width="238" height="212" alt="Светлана Афиногенова.">
-                  </picture>
+                  <div class="instructor__image-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-2-mobile@1x.webp 1x, img/trainer-2-mobile@2x.webp 2x" width="250" height="212">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-2-tablet@1x.webp 1x, img/trainer-2-tablet@2x.webp 2x" width="176" height="212">
+                      <source type="image/webp" srcset="img/trainer-2-desktop@1x.webp 1x, img/trainer-2-desktop@2x.webp 2x" width="238" height="212">
+                      <source media="(max-width: 767px)" srcset="img/trainer-2-mobile@1x.jpg 1x, img/trainer-2-mobile@2x.jpg 2x" width="250" height="212">
+                      <source media="(max-width: 1199px)" srcset="img/trainer-2-tablet@1x.jpg 1x, img/trainer-2-tablet@2x.jpg 2x" width="176" height="212">
+                      <img src="img/trainer-2-desktop@1x.jpg" srcset="img/trainer-2-desktop@1x.jpg 1x, img/trainer-2-desktop@2x.jpg 2x" width="238" height="212" alt="Светлана Афиногенова.">
+                    </picture>
+                  </div>
                   <h4>
                     Светлана Афиногенова
                   </h4>
@@ -488,14 +493,16 @@
                   </p>
                 </div>
                 <div class="training__slide instructor swiper-slide">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-3-mobile@1x.webp 1x, img/trainer-3-mobile@2x.webp 2x" width="250" height="212">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-3-tablet@1x.webp 1x, img/trainer-3-tablet@2x.webp 2x" width="176" height="212">
-                    <source type="image/webp" srcset="img/trainer-3-desktop@1x.webp 1x, img/trainer-3-desktop@2x.webp 2x" width="238" height="212">
-                    <source media="(max-width: 767px)" srcset="img/trainer-3-mobile@1x.jpg 1x, img/trainer-3-mobile@2x.jpg 2x" width="250" height="212">
-                    <source media="(max-width: 1199px)" srcset="img/trainer-3-tablet@1x.jpg 1x, img/trainer-3-tablet@2x.jpg 2x" width="176" height="212">
-                    <img src="img/trainer-3-desktop@1x.jpg" srcset="img/trainer-3-desktop@1x.jpg 1x, img/trainer-3-desktop@2x.jpg 2x" width="238" height="212" alt="Надежда Колесниченко.">
-                  </picture>
+                  <div class="instructor__image-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-3-mobile@1x.webp 1x, img/trainer-3-mobile@2x.webp 2x" width="250" height="212">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-3-tablet@1x.webp 1x, img/trainer-3-tablet@2x.webp 2x" width="176" height="212">
+                      <source type="image/webp" srcset="img/trainer-3-desktop@1x.webp 1x, img/trainer-3-desktop@2x.webp 2x" width="238" height="212">
+                      <source media="(max-width: 767px)" srcset="img/trainer-3-mobile@1x.jpg 1x, img/trainer-3-mobile@2x.jpg 2x" width="250" height="212">
+                      <source media="(max-width: 1199px)" srcset="img/trainer-3-tablet@1x.jpg 1x, img/trainer-3-tablet@2x.jpg 2x" width="176" height="212">
+                      <img src="img/trainer-3-desktop@1x.jpg" srcset="img/trainer-3-desktop@1x.jpg 1x, img/trainer-3-desktop@2x.jpg 2x" width="238" height="212" alt="Надежда Колесниченко.">
+                    </picture>
+                  </div>
                   <h4>
                     Надежда Колесниченко
                   </h4>
@@ -509,14 +516,16 @@
                   </p>
                 </div>
                 <div class="training__slide instructor swiper-slide">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-4-mobile@1x.webp 1x, img/trainer-4-mobile@2x.webp 2x" width="250" height="212">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-4-tablet@1x.webp 1x, img/trainer-4-tablet@2x.webp 2x" width="176" height="212">
-                    <source type="image/webp" srcset="img/trainer-4-desktop@1x.webp 1x, img/trainer-4-desktop@2x.webp 2x" width="238" height="212">
-                    <source media="(max-width: 767px)" srcset="img/trainer-4-mobile@1x.jpg 1x, img/trainer-4-mobile@2x.jpg 2x" width="250" height="212">
-                    <source media="(max-width: 1199px)" srcset="img/trainer-4-tablet@1x.jpg 1x, img/trainer-4-tablet@2x.jpg 2x" width="176" height="212">
-                    <img src="img/trainer-4-desktop@1x.jpg" srcset="img/trainer-4-desktop@1x.jpg 1x, img/trainer-4-desktop@2x.jpg 2x" width="238" height="212" alt="Федор Кайгородов.">
-                  </picture>
+                  <div class="instructor__image-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-4-mobile@1x.webp 1x, img/trainer-4-mobile@2x.webp 2x" width="250" height="212">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-4-tablet@1x.webp 1x, img/trainer-4-tablet@2x.webp 2x" width="176" height="212">
+                      <source type="image/webp" srcset="img/trainer-4-desktop@1x.webp 1x, img/trainer-4-desktop@2x.webp 2x" width="238" height="212">
+                      <source media="(max-width: 767px)" srcset="img/trainer-4-mobile@1x.jpg 1x, img/trainer-4-mobile@2x.jpg 2x" width="250" height="212">
+                      <source media="(max-width: 1199px)" srcset="img/trainer-4-tablet@1x.jpg 1x, img/trainer-4-tablet@2x.jpg 2x" width="176" height="212">
+                      <img src="img/trainer-4-desktop@1x.jpg" srcset="img/trainer-4-desktop@1x.jpg 1x, img/trainer-4-desktop@2x.jpg 2x" width="238" height="212" alt="Федор Кайгородов.">
+                    </picture>
+                  </div>
                   <h4>
                     Федор Кайгородов
                   </h4>
@@ -530,14 +539,16 @@
                   </p>
                 </div>
                 <div class="training__slide instructor swiper-slide">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-1-mobile@1x.webp 1x, img/trainer-1-mobile@2x.webp 2x" width="250" height="212">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-1-tablet@1x.webp 1x, img/trainer-1-tablet@2x.webp 2x" width="176" height="212">
-                    <source type="image/webp" srcset="img/trainer-1-desktop@1x.webp 1x, img/trainer-1-desktop@2x.webp 2x" width="238" height="212">
-                    <source media="(max-width: 767px)" srcset="img/trainer-1-mobile@1x.jpg 1x, img/trainer-1-mobile@2x.jpg 2x" width="250" height="212">
-                    <source media="(max-width: 1199px)" srcset="img/trainer-1-tablet@1x.jpg 1x, img/trainer-1-tablet@2x.jpg 2x" width="176" height="212">
-                    <img src="img/trainer-1-desktop@1x.jpg" srcset="img/trainer-1-desktop@1x.jpg 1x, img/trainer-1-desktop@2x.jpg 2x" width="238" height="212" alt="Александр Прокофьев.">
-                  </picture>
+                  <div class="instructor__image-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/trainer-1-mobile@1x.webp 1x, img/trainer-1-mobile@2x.webp 2x" width="250" height="212">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/trainer-1-tablet@1x.webp 1x, img/trainer-1-tablet@2x.webp 2x" width="176" height="212">
+                      <source type="image/webp" srcset="img/trainer-1-desktop@1x.webp 1x, img/trainer-1-desktop@2x.webp 2x" width="238" height="212">
+                      <source media="(max-width: 767px)" srcset="img/trainer-1-mobile@1x.jpg 1x, img/trainer-1-mobile@2x.jpg 2x" width="250" height="212">
+                      <source media="(max-width: 1199px)" srcset="img/trainer-1-tablet@1x.jpg 1x, img/trainer-1-tablet@2x.jpg 2x" width="176" height="212">
+                      <img src="img/trainer-1-desktop@1x.jpg" srcset="img/trainer-1-desktop@1x.jpg 1x, img/trainer-1-desktop@2x.jpg 2x" width="238" height="212" alt="Александр Прокофьев.">
+                    </picture>
+                  </div>
                   <h4>
                     Александр Прокофьев
                   </h4>
@@ -572,19 +583,15 @@
               </h3>
               <ul class="process__list">
                 <li class="process__item process__item--map">
-                  <span></span>
                   Изучение спортивного туристского движения
                 </li>
                 <li class="process__item process__item--boots">
-                  <span></span>
                   Подготовка и техническое снаряжение в походах
                 </li>
                 <li class="process__item process__item--tree">
-                  <span></span>
                   Лекции по окружающей среде, экологии и гигиене
                 </li>
                 <li class="process__item process__item--mountain">
-                  <span></span>
                   Разъяснение сложности горных препятствий
                 </li>
               </ul>
@@ -602,7 +609,7 @@
               <img src="img/about-us-image-desktop@1x.png" srcset="img/about-us-image-desktop@1x.png 1x, img/about-us-image-desktop@2x.png 2x" width="808" height="474" alt="Туристы в горах.">
             </picture>
             <div class="about-us__text-content">
-              <div class="about-us__title">
+              <div class="about-us__title shadow-title">
                 <h2>
                   О нас
                 </h2>
@@ -627,7 +634,7 @@
         </section>
         <section class="reviews">
           <div class="container">
-            <div class="reviews__title">
+            <div class="reviews__title shadow-title">
               <h2>
                 Отзывы
               </h2>
@@ -767,7 +774,7 @@
         </section>
         <section class="advantages">
           <div class="container">
-            <div class="advantages__title">
+            <div class="advantages__title shadow-title shadow-title--centered">
               <h2>
                 Преимущества
               </h2>
@@ -835,7 +842,7 @@
         </section>
         <section class="gallery">
           <div class="container">
-            <div class="gallery__title">
+            <div class="gallery__title shadow-title">
               <h2>
                 Фотогалерея
               </h2>
@@ -964,7 +971,7 @@
         <section class="contacts">
           <div class="container">
             <div class="contacts__text-content">
-              <div class="contacts__title">
+              <div class="contacts__title shadow-title">
                 <h2>
                   Контакты
                 </h2>

@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   left: 0;
-  top: 40px;
+  top: 0;
   z-index: 30;
   color: $color-default-white;
 
@@ -12,35 +12,50 @@
     grid-template-columns: 205px 1fr auto;
     align-items: center;
     background-color: transparent;
+    padding-top: 40px;
 
     @include vp-1199 {
       grid-template-columns: 1fr 144px 1fr;
+      padding-top: 30px;
     }
 
     @include vp-767 {
       grid-template-columns: auto 1fr;
       gap: 5px 0;
+      padding-top: 15px;
     }
   }
 
   &.is-open {
-    + .hero .container {
-      background: $color-overlay-menu;
-    }
-
-    .container {
-      @include vp-1199 {
-        padding-top: 30px;
-      }
-
-      @include vp-767 {
-        padding-top: 15px;
-      }
+    .header__overlay {
+      position: absolute;
+      z-index: 10;
+      top: 100%;
+      left: 0;
+      background-color: $color-overlay-menu;
+      width: 100vw;
+      height: 100vh;
     }
 
     .header__burger {
-      background-color: $color-icon-default;
-      mask-image: url("../img/sprite/icon-close-menu.svg");
+      width: 22px;
+      height: 22px;
+
+      &::before {
+        z-index: 3;
+        top: 50%;
+        left: 0;
+        background-color: $color-icon-default;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        z-index: 3;
+        top: 50%;
+        left: 0;
+        background-color: $color-icon-default;
+        transform: rotate(-45deg);
+      }
     }
 
     .header__nav {
@@ -100,22 +115,6 @@
 
     @include vp-1199 {
       background-color: $color-background-default;
-    }
-  }
-
-  @include vp-1199 {
-    top: 30px;
-
-    &.is-open {
-      top: 0;
-    }
-  }
-
-  @include vp-767 {
-    top: 15px;
-
-    &.is-open {
-      top: 0;
     }
   }
 }
@@ -186,18 +185,45 @@
 }
 
 .header__burger {
+  position: relative;
   padding: 0;
   margin: 0;
   display: none;
   width: 26px;
   height: 26px;
   border: none;
-  background-color: $color-icon-light;
-  mask-image: url("../img/sprite/icon-open-menu.svg");
-  mask-size: 26px 26px;
-  mask-repeat: no-repeat;
-  mask-position: center;
+  background-color: transparent;
   cursor: pointer;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-color: $color-icon-light;
+    width: 60%;
+    height: 2px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $color-icon-light;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $color-icon-light;
+  }
 
   @include vp-1199 {
     display: block;

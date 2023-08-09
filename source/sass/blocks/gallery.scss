@@ -38,58 +38,30 @@
 }
 
 .gallery__title {
-  position: relative;
   padding-left: 120px;
-
-  h2 {
-    margin-top: 0;
-    margin-bottom: 24px;
-    font-weight: 800;
-    font-size: 35px;
-    line-height: 35px;
-
-    @include vp-1199 {
-      margin-bottom: 23px;
-      font-size: 25px;
-      line-height: 25px;
-    }
-
-    @include vp-767 {
-      margin-bottom: 14px;
-      font-size: 22px;
-      line-height: 22px;
-    }
-  }
+  margin-bottom: 24px;
 
   span {
-    position: absolute;
-    top: 0;
     left: 310px;
     transform: translate(-50%, -25%);
-    font-weight: 800;
-    font-size: 55px;
-    line-height: 55px;
-    opacity: 0.03;
 
     @include vp-1199 {
       left: 185px;
-      font-size: 40px;
-      line-height: 40px;
     }
 
     @include vp-767 {
-      left: 15px;
-      font-size: 26px;
-      line-height: 26px;
+      left: 106px;
     }
   }
 
   @include vp-1199 {
     padding-left: 45px;
+    margin-bottom: 24px;
   }
 
   @include vp-767 {
     padding-left: 15px;
+    margin-bottom: 14px;
   }
 }
 

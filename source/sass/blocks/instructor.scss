@@ -36,26 +36,21 @@
     }
   }
 
-  picture {
+  img {
     grid-column: 1 / -1;
-    height: fit-content;
+    width: 100%;
+    height: 212px;
+    object-fit: cover;
 
     @include vp-1199 {
       justify-self: center;
     }
-  }
-
-  img {
-    width: 238px;
-    height: 212px;
-
-    @include vp-1199 {
-      width: 176px;
-      height: 212px;
-    }
 
     @include vp-767 {
-      width: 250px;
+      height: fit-content;
+    }
+
+    @media (max-width: 340px) {
       height: 212px;
     }
   }
@@ -66,7 +61,13 @@
 
   @include vp-767 {
     padding: 20px;
+    grid-template-rows: auto 32px auto;
   }
+}
+
+.instructor__image-wrapper {
+  grid-column: 1 / -1;
+  height: fit-content;
 }
 
 .instructor__link {

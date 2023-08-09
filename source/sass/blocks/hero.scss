@@ -296,9 +296,10 @@
   width: 56px;
   height: 56px;
   padding: 0;
-  border: none;
+  border-radius: 56px;
+  border: 1px solid $color-icon-light;
   outline: none;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
 
   &:hover {
     cursor: pointer;
@@ -306,49 +307,43 @@
 
   &:hover:not(:disabled),
   &:focus:not(:disabled) {
-    circle {
-      stroke: #1c3374;
-    }
+    border: 1px solid #1c3374;
 
-    path {
-      fill: $color-icon-light;
+    .hero__video-icon-play {
       stroke: #000000;
+      fill: $color-icon-light;
     }
   }
 
   &:active:not(:disabled) {
-    circle {
-      stroke: #1c3374;
-      fill: #1c3374;
-      fill-opacity: 1;
-    }
+    border: 1px solid #1c3374;
+    background-color: #1c3374;
 
-    path {
-      fill: $color-icon-light;
+    .hero__video-icon-play {
       stroke: $color-icon-light;
     }
   }
 
   &:disabled {
     pointer-events: none;
+    border: 1px solid rgba(2, 102, 193, 0.1);
 
-    circle {
-      stroke: $color-icon-additional;
-      stroke-opacity: 0.1;
-    }
-
-    path {
+    .hero__video-icon-play {
       fill: $color-icon-additional;
-      stroke: $color-icon-additional;
       fill-opacity: 0.1;
+      stroke: $color-icon-additional;
       stroke-opacity: 0.1;
     }
   }
 }
 
 .hero__video-icon-play {
-  stroke: $color-icon-light;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
   fill: $color-icon-light;
+  stroke: $color-icon-light;
 }
 
 .hero__photos {
