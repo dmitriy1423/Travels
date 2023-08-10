@@ -117,7 +117,7 @@
 }
 
 .next-tour__place {
-  width: 108px;
+  min-width: 108px;
   position: relative;
   display: flex;
   align-items: center;

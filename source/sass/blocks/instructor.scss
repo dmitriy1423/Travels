@@ -81,6 +81,32 @@
   background-color: transparent;
   outline: 1px solid rgba(2, 102, 193, 0.1);
 
+  &:hover:not(:disabled):not([aria-disabled="true"]),
+  &:focus:not(:disabled):not([aria-disabled="true"]),
+  &:focus-visible:not(:disabled):not([aria-disabled="true"]) {
+    outline: 1px solid $color-icon-default;
+  }
+
+  &:active:not(:disabled):not([aria-disabled="true"]) {
+    outline: 1px solid $color-icon-additional;
+    background-color: $color-icon-additional;
+
+    .instructor__icon {
+      fill: $color-icon-light;
+    }
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    pointer-events: none;
+    outline: 1px solid rgba(45, 56, 63, 0.3);
+    border: none;
+
+    .instructor__icon {
+      fill: rgba(45, 56, 63, 0.3);
+    }
+  }
+
   @include vp-767 {
     margin-right: 11px;
   }

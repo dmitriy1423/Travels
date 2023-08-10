@@ -2204,6 +2204,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 0 20px;
   background-color: transparent;
   padding-top: 40px;
 }
@@ -2750,6 +2751,7 @@ button,
 .hero__slider {
   display: -ms-grid;
   display: grid;
+  position: relative;
 }
 
 .hero__slider-item {
@@ -2984,6 +2986,26 @@ button,
   }
 }
 
+.hero__slider-pagination-wrapper {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  bottom: 97px;
+}
+.hero__slider-pagination-wrapper .container {
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .hero__slider-pagination-wrapper {
+    bottom: 90px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__slider-pagination-wrapper {
+    bottom: 40px;
+  }
+}
+
 .hero__slider-pagination {
   position: absolute;
   z-index: 2;
@@ -2994,7 +3016,6 @@ button,
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  bottom: 97px;
   right: 120px;
 }
 .hero__slider-pagination .swiper-pagination-bullet {
@@ -3017,7 +3038,6 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__slider-pagination {
-    bottom: 90px;
     right: 50%;
     -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
@@ -3026,7 +3046,6 @@ button,
 }
 @media (max-width: 767px) {
   .hero__slider-pagination {
-    bottom: 40px;
     gap: 12px;
   }
 }
@@ -3548,7 +3567,7 @@ button,
 }
 
 .next-tour__place {
-  width: 108px;
+  min-width: 108px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3880,6 +3899,24 @@ button,
   height: 24px;
   background-color: transparent;
   outline: 1px solid rgba(2, 102, 193, 0.1);
+}
+.instructor__link:hover:not(:disabled):not([aria-disabled=true]), .instructor__link:focus:not(:disabled):not([aria-disabled=true]), .instructor__link:focus-visible:not(:disabled):not([aria-disabled=true]) {
+  outline: 1px solid #2d383f;
+}
+.instructor__link:active:not(:disabled):not([aria-disabled=true]) {
+  outline: 1px solid #0266c1;
+  background-color: #0266c1;
+}
+.instructor__link:active:not(:disabled):not([aria-disabled=true]) .instructor__icon {
+  fill: #ffffff;
+}
+.instructor__link:disabled, .instructor__link[aria-disabled=true] {
+  pointer-events: none;
+  outline: 1px solid rgba(45, 56, 63, 0.3);
+  border: none;
+}
+.instructor__link:disabled .instructor__icon, .instructor__link[aria-disabled=true] .instructor__icon {
+  fill: rgba(45, 56, 63, 0.3);
 }
 @media (max-width: 767px) {
   .instructor__link {
@@ -5385,6 +5422,12 @@ button,
   font-size: 12px;
   line-height: 100%;
   font-weight: 300;
+}
+.footer__conf-link:hover, .footer__conf-link:focus {
+  opacity: 0.8;
+}
+.footer__conf-link:active {
+  opacity: 0.5;
 }
 @media (max-width: 1199px) {
   .footer__conf-link {

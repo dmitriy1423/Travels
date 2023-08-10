@@ -197,6 +197,15 @@
   line-height: 100%;
   font-weight: 300;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @include vp-1199 {
     margin-left: 0;
     margin-right: 147px;
