@@ -1,8 +1,9 @@
 .about-us {
   background-color: $color-background-default;
+  position: relative;
 
   .container {
-    max-width: 1920px;
+    max-width: 100%;
     position: relative;
     z-index: 3;
     padding-left: 0;
@@ -83,6 +84,9 @@
 
   img {
     margin-top: -35px;
+    /* position: absolute;
+    left: 0;
+    z-index: -1; */
 
     @include vp-1199 {
       margin-top: 7px;
@@ -108,6 +112,11 @@
 
 .about-us__text-content {
   margin-left: -73px;
+  max-width: 1000px;
+
+  @media (min-width: 1800px) {
+    margin: 0 auto;
+  }
 
   @include vp-1199 {
     margin-left: -76px;

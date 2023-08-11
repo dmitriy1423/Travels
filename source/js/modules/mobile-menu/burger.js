@@ -65,7 +65,7 @@ export class Burger {
       this._closeMenu();
     }
 
-    if (!evt.target.closest('.header')) {
+    if (evt.target.className.includes('header__overlay')) {
       this._closeMenu();
     }
   }

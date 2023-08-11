@@ -31,32 +31,32 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#tours">
                   Туры
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#training">
                   Обучение
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#about-us">
                   О нас
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#reviews">
                   Отзывы
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#gallery">
                   Фотографии
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#contacts">
                   Контакты
                 </a>
               </li>
@@ -74,7 +74,7 @@
       <section class="hero">
         <div class="hero__slider swiper">
           <div class="swiper-wrapper hero__slider-wrapper">
-            <div class="swiper-slide hero__slider-item hero__slider-item--caucasus">
+            <div class="swiper-slide hero__slider-item hero__slider-item--caucasus" tabindex="0">
               <div class="container">
                 <h2>
                   Захватывающие вершины Кавказа
@@ -103,8 +103,9 @@
                   </div>
                 </div>
               </div>
+              <div class="hero__slider-item-overlay"></div>
             </div>
-            <div class="swiper-slide hero__slider-item hero__slider-item--kamchatka">
+            <div class="swiper-slide hero__slider-item hero__slider-item--kamchatka" tabindex="0">
               <div class="container">
                 <h2>
                   Невероятная природа Камчатки
@@ -132,8 +133,9 @@
                   </picture>
                 </div>
               </div>
+              <div class="hero__slider-item-overlay"></div>
             </div>
-            <div class="swiper-slide hero__slider-item hero__slider-item--altai">
+            <div class="swiper-slide hero__slider-item hero__slider-item--altai" tabindex="0">
               <div class="container">
                 <h2>
                   Магические пейзажи Алтайского Края
@@ -211,6 +213,7 @@
                   </div>
                 </div>
               </div>
+              <div class="hero__slider-item-overlay"></div>
             </div>
           </div>
           <div class="hero__slider-pagination-wrapper">
@@ -221,7 +224,7 @@
         </div>
       </section>
       <main class="main">
-        <section class="next-tours">
+        <section class="next-tours" id="tours">
           <div class="container next-tours__container">
             <div class="next-tours__title shadow-title">
               <h2>
@@ -242,41 +245,44 @@
                     <source media="(max-width: 1199px)" srcset="img/next-tour-elbrus-tablet@1x.jpg 1x, img/next-tour-elbrus-tablet@2x.jpg 2x" width="324" height="412">
                     <img src="img/next-tour-elbrus-desktop@1x.jpg" srcset="img/next-tour-elbrus-desktop@1x.jpg 1x, img/next-tour-elbrus-desktop@2x.jpg 2x" width="380" height="412" alt="Эльбрус.">
                   </picture>
-                  <div class="next-tour__inner-wrapper">
-                    <div class="next-tour__place">
-                      Кавказ
+                  <div class="next-tour__text-content">
+                    <div class="next-tour__inner-wrapper">
+                      <div class="next-tour__place">
+                        Кавказ
+                      </div>
+                      <div class="next-tour__days">
+                        4 дня
+                      </div>
+                      <div class="next-tour__nights">
+                        3 ночи
+                      </div>
                     </div>
-                    <div class="next-tour__days">
-                      4 дня
-                    </div>
-                    <div class="next-tour__nights">
-                      3 ночи
-                    </div>
+                    <h3>
+                      Путешествие вокруг Эльбруса
+                    </h3>
+                    <dl>
+                      <dt>
+                        Сложность:
+                      </dt>
+                      <dd>
+                        <span class="visually-hidden">3 / 5</span>
+                        <span class="next-tour__rating" style="width: 60%"></span>
+                      </dd>
+                      <dt>
+                        Даты набора:
+                      </dt>
+                      <dd>
+                        12.06-19.06
+                      </dd>
+                      <dt>
+                        Группа:
+                      </dt>
+                      <dd>
+                        до 15 чел.
+                      </dd>
+                    </dl>
                   </div>
-                  <h3>
-                    Путешествие вокруг Эльбруса
-                  </h3>
-                  <dl>
-                    <dt>
-                      Сложность:
-                    </dt>
-                    <dd>
-                      <span class="visually-hidden">3 / 5</span>
-                      <span class="next-tour__rating" style="width: 60%"></span>
-                    </dd>
-                    <dt>
-                      Даты набора:
-                    </dt>
-                    <dd>
-                      12.06-19.06
-                    </dd>
-                    <dt>
-                      Группа:
-                    </dt>
-                    <dd>
-                      до 15 чел.
-                    </dd>
-                  </dl>
+                  <div class="next-tour__overlay"></div>
                 </div>
                 <div class="next-tours__slide next-tour swiper-slide">
                   <picture>
@@ -287,41 +293,44 @@
                     <source media="(max-width: 1199px)" srcset="img/next-tour-belukha-tablet@1x.jpg 1x, img/next-tour-belukha-tablet@2x.jpg 2x" width="324" height="412">
                     <img src="img/next-tour-belukha-desktop@1x.jpg" srcset="img/next-tour-belukha-desktop@1x.jpg 1x, img/next-tour-belukha-desktop@2x.jpg 2x" width="380" height="412" alt="Белуха.">
                   </picture>
-                  <div class="next-tour__inner-wrapper">
-                    <div class="next-tour__place">
-                      Алтай
+                  <div class="next-tour__text-content">
+                    <div class="next-tour__inner-wrapper">
+                      <div class="next-tour__place">
+                        Алтай
+                      </div>
+                      <div class="next-tour__days">
+                        14 дней
+                      </div>
+                      <div class="next-tour__nights">
+                        13 ночей
+                      </div>
                     </div>
-                    <div class="next-tour__days">
-                      14 дней
-                    </div>
-                    <div class="next-tour__nights">
-                      13 ночей
-                    </div>
+                    <h3>
+                      Путь к&nbsp;подножию Белухи
+                    </h3>
+                    <dl>
+                      <dt>
+                        Сложность:
+                      </dt>
+                      <dd>
+                        <span class="visually-hidden">2 / 5</span>
+                        <span class="next-tour__rating" style="width: 40%"></span>
+                      </dd>
+                      <dt>
+                        Даты набора:
+                      </dt>
+                      <dd>
+                        14.06-23.06
+                      </dd>
+                      <dt>
+                        Группа:
+                      </dt>
+                      <dd>
+                        до 25 чел.
+                      </dd>
+                    </dl>
                   </div>
-                  <h3>
-                    Путь к&nbsp;подножию Белухи
-                  </h3>
-                  <dl>
-                    <dt>
-                      Сложность:
-                    </dt>
-                    <dd>
-                      <span class="visually-hidden">2 / 5</span>
-                      <span class="next-tour__rating" style="width: 40%"></span>
-                    </dd>
-                    <dt>
-                      Даты набора:
-                    </dt>
-                    <dd>
-                      14.06-23.06
-                    </dd>
-                    <dt>
-                      Группа:
-                    </dt>
-                    <dd>
-                      до 25 чел.
-                    </dd>
-                  </dl>
+                  <div class="next-tour__overlay"></div>
                 </div>
                 <div class="next-tours__slide next-tour swiper-slide">
                   <picture>
@@ -332,41 +341,44 @@
                     <source media="(max-width: 1199px)" srcset="img/next-tour-fisht-tablet@1x.jpg 1x, img/next-tour-fisht-tablet@2x.jpg 2x" width="324" height="412">
                     <img src="img/next-tour-fisht-desktop@1x.jpg" srcset="img/next-tour-fisht-desktop@1x.jpg 1x, img/next-tour-fisht-desktop@2x.jpg 2x" width="380" height="412" alt="Фишт.">
                   </picture>
-                  <div class="next-tour__inner-wrapper">
-                    <div class="next-tour__place">
-                      Адыгея
+                  <div class="next-tour__text-content">
+                    <div class="next-tour__inner-wrapper">
+                      <div class="next-tour__place">
+                        Адыгея
+                      </div>
+                      <div class="next-tour__days">
+                        7 дней
+                      </div>
+                      <div class="next-tour__nights">
+                        6 ночей
+                      </div>
                     </div>
-                    <div class="next-tour__days">
-                      7 дней
-                    </div>
-                    <div class="next-tour__nights">
-                      6 ночей
-                    </div>
+                    <h3>
+                      Через Фишт к&nbsp;Черному морю
+                    </h3>
+                    <dl>
+                      <dt>
+                        Сложность:
+                      </dt>
+                      <dd>
+                        <span class="visually-hidden">3 / 5</span>
+                        <span class="next-tour__rating" style="width: 60%"></span>
+                      </dd>
+                      <dt>
+                        Даты набора:
+                      </dt>
+                      <dd>
+                        15.07-19.07
+                      </dd>
+                      <dt>
+                        Группа:
+                      </dt>
+                      <dd>
+                        до 22 чел.
+                      </dd>
+                    </dl>
                   </div>
-                  <h3>
-                    Через Фишт к&nbsp;Черному морю
-                  </h3>
-                  <dl>
-                    <dt>
-                      Сложность:
-                    </dt>
-                    <dd>
-                      <span class="visually-hidden">3 / 5</span>
-                      <span class="next-tour__rating" style="width: 60%"></span>
-                    </dd>
-                    <dt>
-                      Даты набора:
-                    </dt>
-                    <dd>
-                      15.07-19.07
-                    </dd>
-                    <dt>
-                      Группа:
-                    </dt>
-                    <dd>
-                      до 22 чел.
-                    </dd>
-                  </dl>
+                  <div class="next-tour__overlay"></div>
                 </div>
                 <div class="next-tours__slide next-tour swiper-slide">
                   <picture>
@@ -377,41 +389,44 @@
                     <source media="(max-width: 1199px)" srcset="img/next-tour-elbrus-tablet@1x.jpg 1x, img/next-tour-elbrus-tablet@2x.jpg 2x" width="324" height="412">
                     <img src="img/next-tour-elbrus-desktop@1x.jpg" srcset="img/next-tour-elbrus-desktop@1x.jpg 1x, img/next-tour-elbrus-desktop@2x.jpg 2x" width="380" height="412" alt="Эльбрус.">
                   </picture>
-                  <div class="next-tour__inner-wrapper">
-                    <div class="next-tour__place">
-                      Кавказ
+                  <div class="next-tour__text-content">
+                    <div class="next-tour__inner-wrapper">
+                      <div class="next-tour__place">
+                        Кавказ
+                      </div>
+                      <div class="next-tour__days">
+                        4 дня
+                      </div>
+                      <div class="next-tour__nights">
+                        3 ночи
+                      </div>
                     </div>
-                    <div class="next-tour__days">
-                      4 дня
-                    </div>
-                    <div class="next-tour__nights">
-                      3 ночи
-                    </div>
+                    <h3>
+                      Путешествие вокруг Эльбруса
+                    </h3>
+                    <dl>
+                      <dt>
+                        Сложность:
+                      </dt>
+                      <dd>
+                        <span class="visually-hidden">3 / 5</span>
+                        <span class="next-tour__rating" style="width: 60%"></span>
+                      </dd>
+                      <dt>
+                        Даты набора:
+                      </dt>
+                      <dd>
+                        12.06-19.06
+                      </dd>
+                      <dt>
+                        Группа:
+                      </dt>
+                      <dd>
+                        до 15 чел.
+                      </dd>
+                    </dl>
                   </div>
-                  <h3>
-                    Путешествие вокруг Эльбруса
-                  </h3>
-                  <dl>
-                    <dt>
-                      Сложность:
-                    </dt>
-                    <dd>
-                      <span class="visually-hidden">3 / 5</span>
-                      <span class="next-tour__rating" style="width: 60%"></span>
-                    </dd>
-                    <dt>
-                      Даты набора:
-                    </dt>
-                    <dd>
-                      12.06-19.06
-                    </dd>
-                    <dt>
-                      Группа:
-                    </dt>
-                    <dd>
-                      до 15 чел.
-                    </dd>
-                  </dl>
+                  <div class="next-tour__overlay"></div>
                 </div>
               </div>
               <div class="next-tours__slider-buttons-wrapper">
@@ -432,7 +447,7 @@
             </a>
           </div>
         </section>
-        <section class="training">
+        <section class="training" id="training">
           <div class="container">
             <div class="training__title shadow-title">
               <h2>
@@ -602,7 +617,7 @@
             </div>
           </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
           <div class="container">
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="img/about-us-image-mobile@1x.webp 1x, img/about-us-image-mobile@2x.webp 2x" width="320" height="402">
@@ -625,7 +640,7 @@
                 История компании
               </h3>
               <p>
-                В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;&mdash; походы, поездки, восхождения, нам это настолько понравилось, что мы&nbsp;этим стали жить. Спустя 5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали компанию, чтобы показывать людям удивительные места нашей страны.
+                В далеком 2000 году мы начали заниматься туризмом – походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.
               </p>
               <h3>
                 Наша цель
@@ -636,7 +651,7 @@
             </div>
           </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
           <div class="container">
             <div class="reviews__title shadow-title">
               <h2>
@@ -844,7 +859,7 @@
             </div>
           </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
           <div class="container">
             <div class="gallery__title shadow-title">
               <h2>
@@ -959,7 +974,7 @@
             </p>
             <div class="form__wrapper" data-form-validate data-callback="base">
               <form method="post" action="https://echo.htmlacademy.ru/">
-                <div class="form__field" data-on-input-validate data-required data-validate-type="text" data-limitation="letters">
+                <div class="form__field" data-on-input-validate data-required data-validate-type="text" data-limitation="name">
                   <input type="text" aria-label="Имя" name="name" placeholder="Как к вам обращаться?" required>
                 </div>
                 <div class="form__field" data-on-input-validate data-required data-validate-type="phone">
@@ -972,7 +987,7 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="container">
             <div class="contacts__text-content">
               <div class="contacts__title shadow-title">
@@ -1034,32 +1049,32 @@
           <nav class="footer__nav">
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" href="#">
+                <a class="footer__link" href="#tours">
                   Туры
                 </a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">
+                <a class="footer__link" href="#training">
                   Обучение
                 </a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">
+                <a class="footer__link" href="#about-us">
                   О нас
                 </a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">
+                <a class="footer__link" href="#reviews">
                   Отзывы
                 </a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">
+                <a class="footer__link" href="#gallery">
                   Фотографии
                 </a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">
+                <a class="footer__link" href="#contacts">
                   Контакты
                 </a>
               </li>

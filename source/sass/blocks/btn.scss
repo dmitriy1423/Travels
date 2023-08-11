@@ -37,6 +37,8 @@
   }
 
   &--form {
+    user-select: none;
+
     @include vp-1199 {
       padding: 20px;
     }

@@ -1,6 +1,8 @@
 .next-tours {
+  position: relative;
   z-index: 1;
   background-color: $color-default-white;
+  overflow: clip visible;
 
   .container {
     padding-top: 120px;
@@ -16,11 +18,6 @@
       padding-bottom: 67px;
     }
   }
-}
-
-.next-tours__container {
-  position: relative;
-  overflow: clip visible;
 
   &::before {
     content: "";
@@ -31,8 +28,6 @@
     width: 837px;
     height: 279px;
     background-image: url("../img/next-tours-clouds-1-desktop.png");
-    background-repeat: no-repeat;
-    background-position: center;
 
     @include vp-1199 {
       content: none;
@@ -66,6 +61,54 @@
   }
 }
 
+.next-tours__container {
+  position: relative;
+  /* overflow: clip visible; */
+
+  /* &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: -300px;
+    bottom: 0;
+    width: 837px;
+    height: 279px;
+    background-image: url("../img/next-tours-clouds-1-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include vp-1199 {
+      content: none;
+    }
+  } */
+
+  /* &::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: -20px;
+    width: 602px;
+    height: 1364px;
+    background-image: url("../img/next-tours-clouds-2-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include vp-1199 {
+      right: -40%;
+      top: -95px;
+    }
+
+    @include vp-767 {
+      width: 346px;
+      height: 595px;
+      background-image: url("../img/next-tours-clouds-2-mobile.png");
+      right: -53%;
+      top: 137px;
+    }
+  } */
+}
+
 .next-tours__title {
   margin-bottom: 58px;
 
@@ -84,10 +127,13 @@
   display: grid;
 
   @include vp-1199 {
+    width: 666px;
     margin-bottom: 47px;
   }
 
   @include vp-767 {
+    width: 100%;
+    /* height: auto; */
     margin-bottom: 29px;
   }
 }
@@ -138,6 +184,7 @@
   &:hover:not(:disabled):not([aria-disabled="true"]),
   &:focus:not(:disabled):not([aria-disabled="true"]) {
     color: #1c3374;
+    outline: none;
 
     &::after {
       background-color: #1c3374;
