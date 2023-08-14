@@ -4,10 +4,15 @@
 }
 
 .hero__slider-item {
+  visibility: hidden;
   box-sizing: border-box;
   position: relative;
   background-color: #108fd8;
   color: $color-default-white;
+
+  &.swiper-slide-active {
+    visibility: visible;
+  }
 
   h2 {
     position: relative;
@@ -163,6 +168,8 @@
 
   @include vp-767 {
     max-width: 100%;
+    margin-left: 54px;
+    margin-right: 54px;
     margin-bottom: 100px;
     align-self: stretch;
   }
@@ -232,7 +239,7 @@
   }
 
   @include vp-767 {
-    bottom: 50px;
+    bottom: 47px;
   }
 }
 
@@ -249,8 +256,8 @@
     height: 10px;
     padding: 0;
     margin: 0;
-    outline: 1px solid $color-default-white;
-    border: none;
+    border: 1px solid $color-default-white;
+    outline: none;
     border-radius: 50%;
     background-color: transparent;
     opacity: 1;

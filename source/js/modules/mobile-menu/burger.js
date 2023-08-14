@@ -20,6 +20,11 @@ export class Burger {
     }
 
     this._burger.addEventListener('click', this._onBurgerClick);
+    document.querySelectorAll('.header__link').forEach((link) => {
+      link.addEventListener('click', () => {
+        this._closeMenu();
+      });
+    });
   }
 
   _openMenu() {

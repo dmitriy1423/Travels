@@ -74,7 +74,7 @@
 
   @include vp-1199 {
     margin-left: 45px;
-    margin-top: -8px;
+    margin-top: 0;
     grid-column: 2 / -1;
     gap: 20px;
   }
@@ -176,10 +176,6 @@
   margin-top: 0;
   margin-bottom: 10px;
   margin-left: -63px;
-
-  /* @media (min-width: 1600px) {
-    margin: 0 auto;
-  } */
 
   @include vp-1199 {
     margin-bottom: 10px;
